@@ -5,9 +5,9 @@ Rails.application.routes.draw do
      post 'admin_token' => 'admin_token#create'
      post 'find_admin' => 'admin#find'
 
-     resources :students
-     resources :cohorts
-     resources :admins
+     resources :student
+     resources :cohort
+     resources :admin
 
    end
 
