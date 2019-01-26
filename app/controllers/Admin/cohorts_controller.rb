@@ -1,4 +1,4 @@
-class Admin::CohortController < ApplicationController
+class Admin::CohortsController < ApplicationController
   def index
       @cohorts = Cohort.all
       render json: @cohorts
@@ -6,7 +6,6 @@ class Admin::CohortController < ApplicationController
 
     def create
       cohort = JSON.parse(params['cohort'])
-     # puts "@@@@@@@@@@@@@@  #{params['cohort']} @@@@@@@@@@@@@   @@@@@@@@@..........@@@ #{val["name"]}"
       cohort = Cohort.create(cohort)
       render json: cohort
     end
