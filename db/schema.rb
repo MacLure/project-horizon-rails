@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_01_26_205321) do
+ActiveRecord::Schema.define(version: 2019_01_26_223533) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,6 +22,15 @@ ActiveRecord::Schema.define(version: 2019_01_26_205321) do
     t.string "password_digest"
     t.bigint "phone"
     t.string "image_url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "assignments", force: :cascade do |t|
+    t.integer "cohort_id"
+    t.string "name"
+    t.text "body"
+    t.date "due_date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
