@@ -1,4 +1,4 @@
-class CohortController < ApplicationController
+class Admin::CohortController < ApplicationController
   def index
       @cohorts = Cohort.all
       render json: @cohorts

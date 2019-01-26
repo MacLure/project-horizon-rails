@@ -1,4 +1,4 @@
-class StudentController < ApplicationController
+class Admin::StudentController < ApplicationController
   def index
       @students = Student.all
       render json: @students

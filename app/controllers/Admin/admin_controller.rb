@@ -1,4 +1,4 @@
-class AdminController < ApplicationController
+class Admin::AdminController < ApplicationController
 
   def find
      @admin = Admin.find_by(params[:admin][:email])
