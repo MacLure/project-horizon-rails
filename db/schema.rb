@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_01_27_003823) do
+ActiveRecord::Schema.define(version: 2019_01_27_184643) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -45,6 +45,50 @@ ActiveRecord::Schema.define(version: 2019_01_27_003823) do
     t.string "course_type"
   end
 
+  create_table "company_notes", force: :cascade do |t|
+    t.integer "admin_id"
+    t.string "body"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "contact_notes", force: :cascade do |t|
+    t.integer "admin_id"
+    t.integer "contact_id"
+    t.string "body"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "contacts", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
+    t.bigint "phone"
+    t.string "email"
+    t.string "title"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "events", force: :cascade do |t|
+    t.string "name"
+    t.integer "company_id"
+    t.integer "contact_id"
+    t.date "date"
+    t.time "time"
+    t.string "body"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "student_notes", force: :cascade do |t|
+    t.integer "admin_id"
+    t.integer "student_id"
+    t.string "body"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "students", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
@@ -55,6 +99,24 @@ ActiveRecord::Schema.define(version: 2019_01_27_003823) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "cohort_id"
+  end
+
+  create_table "submission_comments", force: :cascade do |t|
+    t.integer "admin_id"
+    t.integer "submission_id"
+    t.string "body"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "submissions", force: :cascade do |t|
+    t.integer "assignment_id"
+    t.integer "student_id"
+    t.string "url"
+    t.string "body"
+    t.boolean "is_approved"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

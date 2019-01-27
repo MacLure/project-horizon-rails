@@ -80,3 +80,5 @@ student40 = Student.create(first_name: "Emanuel", last_name: "Hines", phone: 647
 student41 = Student.create(first_name: "Mike", last_name: "Francis", phone: 4162223333, email:"Mike.Francis@coolman.com", image_url: nil, password: 'password', cohort_id: cohort5.id)
 student42 = Student.create(first_name: "Joan", last_name: "Peters", phone: 6479990000, email:"Joan.Peters@haaangon.com", image_url: nil, password: 'password', cohort_id: cohort5.id)
 student43 = Student.create(first_name: "Eva", last_name: "Wheeler", phone: 4162223333, email:"Eva.Wheeler@coolman.com", image_url: nil, password: 'password', cohort_id: cohort5.id)
+
+assignment1 = Assignment.create(name: '', body: '', due_date: '', cohort_id: cohort1.id, )
