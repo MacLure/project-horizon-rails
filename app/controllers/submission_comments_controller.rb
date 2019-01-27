@@ -1,0 +1,2 @@
+class SubmissionCommentsController < ApplicationController
+end
