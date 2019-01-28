@@ -1,15 +1,14 @@
 class Admin::AdminsController < ApplicationController
 
   def find
-    Rails.logger.info("........................... #{params}")
-     @admin = Admin.find_by(params[:email])
-     if @admin
-       render json: @admin
-     else
-       @errors = @admin.errors.full_messages
-       render json: @errors
-     end
-    end
+  @admin = Admin.find_by(email: params[:admin][:email])
+  if @admin
+    render json: @admin
+  else
+    @errors = @admin.errors.full_messages
+    render json: @errors
+  end
+ end
 
     def index
 
@@ -38,10 +37,10 @@ class Admin::AdminsController < ApplicationController
       render json: @admin
     end
 
-    def update
-      if @admin.update(admin_params)
-        render json: @admin
-    end
+    # def update
+    #   if @admin.update(admin_params)
+    #     render json: @admin
+    # end
 
     def destroy
       Admin.destroy(params[:id])
@@ -49,8 +48,11 @@ class Admin::AdminsController < ApplicationController
 
     private
 
+    def set_user
+      @user = User.find_by(id: params[:id])
+    end
+
     def admin_params
       params.require(:admin).permit( :first_name, :last_name, :phone, :email, :password, :image_url, :company_id)
     end
   end
-end
