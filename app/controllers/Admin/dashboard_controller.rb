@@ -5,16 +5,16 @@ class Admin::DashboardController < ApplicationController
     @cohorts = Cohort.all
 
     @students = Student.all
-    @student_notes = Student_notes.all
+    @student_notes = Student_note.all
 
     @assignments = Assignment.all
-    @submissions = Submissions.all
-    @submission_comments = Submission_comments.all
+    @submissions = Submission.all
+    @submission_comments = Submission_comment.all
 
-    @company_notes = Company_notes.all
-    @contact_notes = Contact_notes.all
+    @company_notes = Company_note.all
+    @contact_notes = Contact_note.all
 
-    @events = Events.all
+    @events = Event.all
 
     render json: {
       admins: @admins,
@@ -27,7 +27,6 @@ class Admin::DashboardController < ApplicationController
       company_notes: @company_notes,
       contact_notes: @contact_notes,
       events: @events,
-  
     }
 
   end
