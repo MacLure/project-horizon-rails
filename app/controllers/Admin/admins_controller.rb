@@ -31,8 +31,8 @@ class Admin::AdminsController < ApplicationController
         render json: @admin
       else
         render json: @admin.errors, status: 400
+      end
     end
-  end
 
     def show
       render json: @admin
@@ -41,6 +41,7 @@ class Admin::AdminsController < ApplicationController
     def update
       if @admin.update(admin_params)
         render json: @admin
+      end
     end
 
     def destroy
@@ -53,4 +54,3 @@ class Admin::AdminsController < ApplicationController
       params.require(:admin).permit( :first_name, :last_name, :phone, :email, :password, :image_url, :company_id)
     end
   end
-end
