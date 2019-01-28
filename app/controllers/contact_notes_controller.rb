@@ -1,2 +1,0 @@
-class ContactNotesController < ApplicationController
-end
