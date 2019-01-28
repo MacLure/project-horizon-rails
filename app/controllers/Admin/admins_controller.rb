@@ -1,7 +1,8 @@
 class Admin::AdminsController < ApplicationController
 
   def find
-     @admin = Admin.find_by(params[:admin][:email])
+    Rails.logger.info("........................... #{params}")
+     @admin = Admin.find_by(params[:email])
      if @admin
        render json: @admin
      else
