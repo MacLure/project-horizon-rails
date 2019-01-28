@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   namespace :admin do
      get '/' => 'dashboard#index'
      post 'admin_token' => 'admin_token#create'
-     post 'find_admin' => 'admin#find'
+     post 'find_admin' => 'admins#find'
 
      resources :students
      resources :cohorts
