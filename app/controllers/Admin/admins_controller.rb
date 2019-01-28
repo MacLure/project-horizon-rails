@@ -30,17 +30,18 @@ class Admin::AdminsController < ApplicationController
         render json: @admin
       else
         render json: @admin.errors, status: 400
+      end
     end
-  end
 
     def show
       render json: @admin
     end
 
-    # def update
-    #   if @admin.update(admin_params)
-    #     render json: @admin
-    # end
+    def update
+      if @admin.update(admin_params)
+        render json: @admin
+      end
+    end
 
     def destroy
       Admin.destroy(params[:id])
