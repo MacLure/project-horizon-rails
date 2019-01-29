@@ -3,8 +3,6 @@ class Admin::AdminsController < ApplicationController
 
 
   def find
-    
-
   @admin = Admin.find_by(email: params[:admin][:email])
   if @admin
     render json: @admin
@@ -24,16 +22,13 @@ class Admin::AdminsController < ApplicationController
 
     end
 
-    def new
-      @admin = Admin.new
-    end
-
     def create
-      @admin = Admin.new(admin_params)
-      if @admin.valid? && @admin.save
-        render json: @admin
+      admin = JSON.parse(params['admin'])
+      admin = Admin.create(admin)
+      if admin.valid? && admin.save
+        render json: admin
       else
-        render json: @admin.errors, status: 400
+        render json: admin.errors, status: 400
       end
     end
 
