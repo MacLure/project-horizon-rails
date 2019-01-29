@@ -1,6 +1,8 @@
 class Admin::AdminsController < ApplicationController
 
   def find
+    puts "Inside `find`"
+
   @admin = Admin.find_by(email: params[:admin][:email])
   if @admin
     render json: @admin
