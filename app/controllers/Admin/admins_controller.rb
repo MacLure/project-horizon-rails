@@ -1,14 +1,6 @@
 class Admin::AdminsController < ApplicationController
 
-  def find
-  @admin = Admin.find_by(email: params[:admin][:email])
-  if @admin
-    render json: @admin
-  else
-    @errors = @admin.errors.full_messages
-    render json: @errors
-  end
- end
+
 
     def index
 
@@ -33,6 +25,16 @@ class Admin::AdminsController < ApplicationController
       end
     end
 
+    def find
+    @admin = Admin.find_by(email: params[:admin][:email])
+    if @admin
+      render json: @admin
+    else
+      @errors = @admin.errors.full_messages
+      render json: @errors
+    end
+   end
+
     def show
       render json: @admin
     end
@@ -56,4 +58,4 @@ class Admin::AdminsController < ApplicationController
     def admin_params
       params.require(:admin).permit( :first_name, :last_name, :phone, :email, :password, :image_url, :company_id)
     end
-  end
+end
