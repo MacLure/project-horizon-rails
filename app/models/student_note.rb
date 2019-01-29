@@ -1,6 +1,7 @@
-class Student_note < ApplicationRecord
+class StudentNote < ApplicationRecord
 
-# has_and_belongs_to_many :admins
+
 belongs_to :student
+belongs_to :admin
 
 end
