@@ -7,6 +7,8 @@ Rails.application.routes.draw do
      get '/' => 'dashboard#index'
      post 'admin_token' => 'admin_token#create'
      post 'find_admin' => 'admins#find'
+     post 'student_token' => 'student_token#create'
+     post 'find_student' => 'student#find'
 
      resources :students
      resources :cohorts
