@@ -12,14 +12,15 @@ class ApplicationController < ActionController::API
       headers['Access-Control-Request-Method'] = '*'
       headers['Access-Control-Allow-Headers'] = 'Origin, X-Requested-With, Content-Type, Accept, Authorization'
   end
-# JSON.parse(params['cohort']
-  def authenticate_method
-    if is_admin == true
-      authenticate_admin = true
-    elsif is_admin == false
-      authenticate_student = false
-    end
-  end
+
+  # def authenticate_method
+  #   if JSON.parse(params['is_admin'] == true
+  #     authenticate_admin = true
+  #   elsif JSON.parse(params['is_admin'] == false
+  #     authenticate_student = true
+  #   end
+  # end
+
 
     private
 

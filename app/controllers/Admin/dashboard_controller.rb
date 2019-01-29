@@ -5,14 +5,14 @@ class Admin::DashboardController < ApplicationController
     @cohorts = Cohort.all
 
     @students = Student.all
-    @student_notes = Student_note.all
+    @student_notes = StudentNote.all
 
     @assignments = Assignment.all
     @submissions = Submission.all
-    @submission_comments = Submission_comment.all
+    @submission_comments = SubmissionComment.all
 
-    @company_notes = Company_note.all
-    @contact_notes = Contact_note.all
+    @company_notes = CompanyNote.all
+    @contact_notes = ContactNote.all
 
     @events = Event.all
 
