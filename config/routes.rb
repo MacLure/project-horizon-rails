@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  
+
   match '*path', :controller => 'application', :action => 'handle_options_request', :constraints => {:method => 'OPTIONS'}, via: [:options]
-  
+
   namespace :admin do
      get '/' => 'dashboard#index'
      post 'admin_token' => 'admin_token#create'
@@ -13,6 +13,10 @@ Rails.application.routes.draw do
      resources :students
      resources :cohorts
      resources :admins
+     resources :assignemnts
+     resources :events
+     resources :contacts
+     
 
    end
 
