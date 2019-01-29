@@ -33,8 +33,8 @@ admin15 = Admin.create(first_name: "Ruth", last_name: "Peck", phone: 4163959281,
 
 cohort1 = Cohort.create(start_date: "2018-11-05 00:00:00", end_date: "2019-02-01 00:00:00", course_type:"wdi", name: "WDI-November-2018")
 cohort2 = Cohort.create(start_date: "2018-11-05 00:00:00", end_date: "2019-02-09 00:00:00", course_type:"wdi", name: "WDI-September-2018")
-cohort3 = Cohort.create(start_date: "2018-11-05 00:00:00", end_date: "2019-02-01 00:00:00", course_type:"uxdi", name: "UXDI-November-2018")
-cohort4 = Cohort.create(start_date: "2018-11-05 00:00:00", end_date: "2019-02-09 00:00:00", course_type:"uxdi", name: "UXDI-September-2018")
+cohort3 = Cohort.create(start_date: "2018-12-15 00:00:00", end_date: "2019-03-15 00:00:00", course_type:"uxdi", name: "UXDI-December-2018")
+cohort4 = Cohort.create(start_date: "2019-01-05 00:00:00", end_date: "2019-04-09 00:00:00", course_type:"uxdi", name: "UXDI-January-2019")
 cohort5 = Cohort.create(start_date: "2018-11-05 00:00:00", end_date: "2019-02-01 00:00:00", course_type:"dsi", name: "DSI-November-2018")
 
 student1 = Student.create(first_name: "Clara", last_name: "O'Student", phone: 9057778888, email:"clara.ostudent@okboom.com", image_url: nil, password: 'password', cohort_id: cohort1.id)
