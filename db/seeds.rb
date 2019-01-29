@@ -9,11 +9,11 @@
 Admin.delete_all
 Student.delete_all
 Cohort.delete_all
-Submission_comment.delete_all
+SubmissionComment.delete_all
 Submission.delete_all
 Assignment.delete_all
 Event.delete_all
-Student_note.delete_all
+StudentNote.delete_all
 
 admin1 = Admin.create(first_name: "Sally", last_name: "Adminstein", phone: 4161112222, email:"sally.mcadmin@horizon.com", title:"Outcomes Officer", image_url: nil, password: 'password')
 admin2 = Admin.create(first_name: "Mustafa", last_name: "Adminsson", phone: 9054445555, email:"mustada.adminsson@horizon.com", title:"Student Life Coordinator", image_url: nil, password: 'password')
@@ -92,17 +92,17 @@ assignment2 = Assignment.create(name: 'Assignment 2: LinkedIn Profile', body: "D
 event1 = Event.create(name:"Lesson: Personal Branding", company_id: nil, contact_id: nil, date: '2019-11-15 00:00:00', time: '2019-11-15 12:30:00', body:"Lesson on personal branding in Room 202.", cohort_id: cohort1.id )
 event2 = Event.create(name:"Lesson: LinkedIn", company_id: nil, contact_id: nil, date: '2019-12-10 00:00:00', time: '2019-12-10 12:30:00', body:"Lesson on LinkedIn in Room 203.", cohort_id: cohort1.id )
 
-student_note1 = Student_note.create(admin_id: admin11.id, student_id:student1.id, body:"Good attitude, grasping the material well.")
-student_note2 = Student_note.create(admin_id: admin12.id, student_id:student1.id, body:"Pleasent to teach, gets along with other students.")
-student_note3 = Student_note.create(admin_id: admin13.id, student_id:student1.id, body:"Always friendly.  Strong on programming knowledge.")
+student_note1 = StudentNote.create(admin_id: admin11.id, student_id:student1.id, body:"Good attitude, grasping the material well.")
+student_note2 = StudentNote.create(admin_id: admin12.id, student_id:student1.id, body:"Pleasent to teach, gets along with other students.")
+student_note3 = StudentNote.create(admin_id: admin13.id, student_id:student1.id, body:"Always friendly.  Strong on programming knowledge.")
 
-student_note4 = Student_note.create(admin_id: admin11.id, student_id:student2.id, body:"Kind of reserved.  Difficult to guage their enthusiasm for coding.")
-student_note5 = Student_note.create(admin_id: admin12.id, student_id:student2.id, body:"Doesn't seem to enjoy the class, sticks to themselves.")
-student_note6 = Student_note.create(admin_id: admin13.id, student_id:student2.id, body:"Left very early, possibly feeling overwhelmed.")
+student_note4 = StudentNote.create(admin_id: admin11.id, student_id:student2.id, body:"Kind of reserved.  Difficult to guage their enthusiasm for coding.")
+student_note5 = StudentNote.create(admin_id: admin12.id, student_id:student2.id, body:"Doesn't seem to enjoy the class, sticks to themselves.")
+student_note6 = StudentNote.create(admin_id: admin13.id, student_id:student2.id, body:"Left very early, possibly feeling overwhelmed.")
 
-student_note7 = Student_note.create(admin_id: admin11.id, student_id:student3.id, body:"Very friendly, but struggles with the material.")
-student_note8 = Student_note.create(admin_id: admin12.id, student_id:student3.id, body:"Gets along with with everyone, working hard to solidify their knowledge.")
-student_note9 = Student_note.create(admin_id: admin13.id, student_id:student3.id, body:"Great attitude, puts in a lot of work to get the concepts.")
+student_note7 = StudentNote.create(admin_id: admin11.id, student_id:student3.id, body:"Very friendly, but struggles with the material.")
+student_note8 = StudentNote.create(admin_id: admin12.id, student_id:student3.id, body:"Gets along with with everyone, working hard to solidify their knowledge.")
+student_note9 = StudentNote.create(admin_id: admin13.id, student_id:student3.id, body:"Great attitude, puts in a lot of work to get the concepts.")
 
 submission1 = Submission.create(assignment_id: assignment1.id, student_id: student1.id, url: '', body: "It all started when I was young.  Now I'm professional with an interesting back-story.", is_approved: true)
 submission2 = Submission.create(assignment_id: assignment1.id, student_id: student2.id, url: '', body: "My brand is your brand.  Whatchu got?", is_approved: false)
@@ -112,10 +112,10 @@ submission4 = Submission.create(assignment_id: assignment2.id, student_id: stude
 submission5 = Submission.create(assignment_id: assignment2.id, student_id: student2.id, url: 'https://www.linkedin.com/in/malcolmmaclure/', body: "", is_approved: false)
 submission6 = Submission.create(assignment_id: assignment2.id, student_id: student3.id, url: 'https://www.linkedin.com/in/malcolmmaclure/', body: "", is_approved: false)
 
-submission_comment1 = Submission_comment.create(admin_id: admin1.id, submission_id: submission1.id, body:"Wow, what a great personal brand!")
-submission_comment2 = Submission_comment.create(admin_id: admin1.id, submission_id: submission2.id, body:"Great start!  Try including more information about your brand.")
-submission_comment3 = Submission_comment.create(admin_id: admin1.id, submission_id: submission3.id, body:"This is a really interesting personal story - great work.")
+submission_comment1 = SubmissionComment.create(admin_id: admin1.id, submission_id: submission1.id, body:"Wow, what a great personal brand!")
+submission_comment2 = SubmissionComment.create(admin_id: admin1.id, submission_id: submission2.id, body:"Great start!  Try including more information about your brand.")
+submission_comment3 = SubmissionComment.create(admin_id: admin1.id, submission_id: submission3.id, body:"This is a really interesting personal story - great work.")
 
-submission_comment4 = Submission_comment.create(admin_id: admin1.id, submission_id: submission4.id, body:"Are you sure this is your LinkedIn profile?")
-submission_comment5 = Submission_comment.create(admin_id: admin1.id, submission_id: submission5.id, body:"Good start.  Please fill in more fields, especially the summary section.")
-submission_comment6 = Submission_comment.create(admin_id: admin1.id, submission_id: submission6.id, body:"Great pic!  Making great progress!")
+submission_comment4 = SubmissionComment.create(admin_id: admin1.id, submission_id: submission4.id, body:"Are you sure this is your LinkedIn profile?")
+submission_comment5 = SubmissionComment.create(admin_id: admin1.id, submission_id: submission5.id, body:"Good start.  Please fill in more fields, especially the summary section.")
+submission_comment6 = SubmissionComment.create(admin_id: admin1.id, submission_id: submission6.id, body:"Great pic!  Making great progress!")
