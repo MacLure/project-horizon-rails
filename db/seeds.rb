@@ -89,8 +89,8 @@ student43 = Student.create(first_name: "Eva", last_name: "Wheeler", phone: 41622
 assignment1 = Assignment.create(name: 'Personal Branding', body: "Hey, branding is important.  Let's personal brand.", due_date: '2019-12-01 00:00:00', cohort_id: cohort1.id, )
 assignment2 = Assignment.create(name: 'LinkedIn Profile', body: "Do you have LinkedIn?  Get on it.", due_date: '2019-12-15 00:00:00', cohort_id: cohort1.id, )
 
-event1 = Event.create(name:"Lesson: Personal Branding", company_id: nil, contact_id: nil, date: '2019-11-15 00:00:00', time: '2019-11-15 12:30:00', body:"Lesson on personal branding in Room 202." )
-event2 = Event.create(name:"Lesson: LinkedIn", company_id: nil, contact_id: nil, date: '2019-12-10 00:00:00', time: '2019-12-10 12:30:00', body:"Lesson on LinkedIn in Room 203." )
+event1 = Event.create(name:"Lesson: Personal Branding", company_id: nil, contact_id: nil, date: '2019-11-15 00:00:00', time: '2019-11-15 12:30:00', body:"Lesson on personal branding in Room 202.", cohort_id: cohort1.id )
+event2 = Event.create(name:"Lesson: LinkedIn", company_id: nil, contact_id: nil, date: '2019-12-10 00:00:00', time: '2019-12-10 12:30:00', body:"Lesson on LinkedIn in Room 203.", cohort_id: cohort1.id )
 
 student_note1 = Student_note.create(admin_id: admin11.id, student_id:student1.id, body:"Good attitude, grasping the material well.")
 student_note2 = Student_note.create(admin_id: admin12.id, student_id:student1.id, body:"Pleasent to teach, gets along with other students.")
