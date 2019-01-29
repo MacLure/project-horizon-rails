@@ -1,3 +1,3 @@
-class Submission_comment < ApplicationRecord
+class SubmissionComment < ApplicationRecord
 belongs_to :submission
 end
