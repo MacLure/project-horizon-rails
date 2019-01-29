@@ -1,3 +1,3 @@
-class Contact_note < ApplicationRecord
-belongs_to :contact 
+class ContactNote < ApplicationRecord
+belongs_to :contact
 end
