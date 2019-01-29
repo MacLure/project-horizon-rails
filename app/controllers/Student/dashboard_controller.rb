@@ -1,20 +1,15 @@
 class Student::DashboardController < ApplicationController
   def index
 
-    @admins = Admin.all
-    @cohorts = Cohort.all
+    @cohort = current_user.cohort
+    @students = @cohort.students
+    @assignments = @cohort.assignments
+    @submissions = @cohort.submissions
+    @submission_comments = current_user.submission_comments
+    @events = @cohort.events
 
-    @students = Student.all
-    @student_notes = Student_note.all
 
-    @assignments = Assignment.all
-    @submissions = Submission.all
-    @submission_comments = Submission_comment.all
-
-    @company_notes = Company_note.all
-    @contact_notes = Contact_note.all
-
-    @events = Event.all
+  
 
     render json: {
       admins: @admins,

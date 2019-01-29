@@ -1,7 +1,12 @@
-class Admin::StudentController < ApplicationController
+class Student::StudentController < ApplicationController
+  before_action :authenticate_student
   def index
-      @students = Student.all
-      render json: @students
+    @admins = Admin.all
+    @cohorts = Cohort.all
+    @students = Student.all
+
+    render json: {admins: @admins, cohorts: @cohorts, students: @students}
+
     end
 
     def create
