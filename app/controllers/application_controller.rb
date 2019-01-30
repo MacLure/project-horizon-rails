@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::API
   before_action :cors_set_access_control_headers
   include Knock::Authenticable
+  # helper_method :current_user
 
   def handle_options_request
     head(:ok) if request.request_method == "OPTIONS"
@@ -13,18 +14,25 @@ class ApplicationController < ActionController::API
       headers['Access-Control-Allow-Headers'] = 'Origin, X-Requested-With, Content-Type, Accept, Authorization'
   end
 
-  # def authenticate_method
+  # def authenticate_admin
   #   if JSON.parse(params['is_admin'] == true
-  #     authenticate_admin = true
-  #   elsif JSON.parse(params['is_admin'] == false
-  #     authenticate_student = true
+  #     return true
+  #   else
+  #     return false
   #   end
   # end
 
 
     private
 
-    def logged_in?
-      !!current_user
-    end
+    # def logged_in?[]
+    #   current_user
+    # end
 end
+
+
+
+
+# elsif JSON.parse(params['is_admin'] == fa
+#   authenticate_student = true
+# end
