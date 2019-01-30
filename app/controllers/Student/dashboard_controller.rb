@@ -31,7 +31,7 @@ class Student::DashboardController < ApplicationController
     # @events = Event.all
     #
     puts ".....................#{current_student_student.inspect}"
-    @cohort = current_student.cohort
+    @cohort = .cohort
     @students = @cohort.students
     @assignments = @cohort.assignments
     @submissions = @cohort.submissions

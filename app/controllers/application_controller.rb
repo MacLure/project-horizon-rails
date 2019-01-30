@@ -25,6 +25,7 @@ class ApplicationController < ActionController::API
 
   def authenticate_student
     if (params['is_admin']) == false && (params['token'])
+      current_student_student = Student.find_by_email(params[:auth][:email])
       return true
     else
       return false
