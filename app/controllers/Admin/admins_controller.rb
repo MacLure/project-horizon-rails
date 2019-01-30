@@ -12,7 +12,7 @@ end
   #   @errors = @admin.errors.full_messages
   #   render json: @errors
   # end
- end
+ # end
 
     def index
 
