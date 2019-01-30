@@ -1,8 +1,9 @@
 class Student::StudentTokenController < Knock::AuthTokenController
   skip_before_action :verify_authenticity_token
+  after_action :current_student
 
-  def find
-  @student = JSONparse(Student.find_by(params[:student][:email]))
+  def current_student
+  @student = JSON.parse(Student.find_by(params[:auth][:email]))
   if @student
     render json: @student
   else

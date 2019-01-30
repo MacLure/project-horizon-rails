@@ -5,9 +5,12 @@ class Student::DashboardController < ApplicationController
   #     render json: current_user.as_json(only: %i(email))
   # end
 
-  def current_student
-  student = Student.find_by(email: params[:email])
-  end
+
+
+
+  # def current_student
+  # student = Student.find_by(JSON.parse(params['email']))
+  # end
 
   def index
 
@@ -27,6 +30,7 @@ class Student::DashboardController < ApplicationController
     #
     # @events = Event.all
     #
+    puts ".....................#{current_student.inspect}"
     @cohort = current_student.cohort
     @students = @cohort.students
     @assignments = @cohort.assignments
