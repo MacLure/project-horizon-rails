@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::API
   before_action :cors_set_access_control_headers
   include Knock::Authenticable
-  helper_method :current_user
+  # helper_method :current_user
 
   def handle_options_request
     head(:ok) if request.request_method == "OPTIONS"
@@ -25,9 +25,9 @@ class ApplicationController < ActionController::API
 
     private
 
-    def logged_in?[]
-      current_user
-    end
+    # def logged_in?[]
+    #   current_user
+    # end
 end
 
 
