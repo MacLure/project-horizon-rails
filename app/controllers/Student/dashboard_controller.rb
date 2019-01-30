@@ -30,12 +30,14 @@ class Student::DashboardController < ApplicationController
     #
     # @events = Event.all
     #
-    puts "..........#{params}...........#{@current_student_student.inspect}"
-    @cohort = @current_student_student.cohort
+
+    
+
+    @cohort = Admin.find(JSON.parse(params['email'])).cohort
     @students = @cohort.students
     @assignments = @cohort.assignments
     @submissions = @cohort.submissions
-    @submission_comments = @current_student_student.submission_comments
+    # @submission_comments = @current_student_student.submission_comments
     @events = @cohort.events
 
 

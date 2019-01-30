@@ -8,7 +8,7 @@ Rails.application.routes.draw do
      post 'admin_token' => 'admin_token#create'
      get 'admin/current' => 'admins#current'
      post 'student_token' => 'student_token#create'
-     post 'find_student' => 'student#find'
+
 
      resources :students
      resources :cohorts
@@ -25,8 +25,9 @@ Rails.application.routes.draw do
      get '/' => 'dashboard#index'
      post 'student_token' => 'student_token#create'
      get 'student/current' => 'students#current'
+    post 'find_student' => 'student#find'
 
-     resources :students, only: %i(update)
+     resources :students
      resources :cohorts, only: %i(show)
      resources :events, only: %i(show)
      resources :assignments, only: %i(show)

@@ -1,6 +1,16 @@
 class Student::StudentsController < ApplicationController
   before_action :authenticate_student
-  
+
+  def find
+   @student = Student.find_by(email: params[:student][:email])
+   if @student
+     render json: @student
+   else
+     @errors = @student.errors.full_messages
+     render json: @errors
+   end
+  end
+
   def index
     @admins = Admin.all
     @cohorts = Cohort.all
