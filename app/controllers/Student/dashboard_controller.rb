@@ -1,29 +1,38 @@
 class Student::DashboardController < ApplicationController
   before_action :authenticate_student
+
+  # def current
+  #     render json: current_user.as_json(only: %i(email))
+  # end
+
+  def current_student
+  student = Student.find_by(email: params[:email])
+  end
+
   def index
 
 
-    @admins = Admin.all
-    @cohorts = Cohort.all
-
-    @students = Student.all
-    @student_notes = StudentNote.all
-
-    @assignments = Assignment.all
-    @submissions = Submission.all
-    @submission_comments = SubmissionComment.all
-
-    @company_notes = CompanyNote.all
-    @contact_notes = ContactNote.all
-
-    @events = Event.all
+    # @admins = Admin.all
+    # @cohorts = Cohort.all
     #
-    # @cohort = current_user.cohort
-    # @students = @cohort.students
-    # @assignments = @cohort.assignments
-    # @submissions = @cohort.submissions
-    # @submission_comments = current_user.submission_comments
-    # @events = @cohort.events
+    # @students = Student.all
+    # @student_notes = StudentNote.all
+    #
+    # @assignments = Assignment.all
+    # @submissions = Submission.all
+    # @submission_comments = SubmissionComment.all
+    #
+    # @company_notes = CompanyNote.all
+    # @contact_notes = ContactNote.all
+    #
+    # @events = Event.all
+    #
+    @cohort = current_user.cohort
+    @students = @cohort.students
+    @assignments = @cohort.assignments
+    @submissions = @cohort.submissions
+    @submission_comments = current_user.submission_comments
+    @events = @cohort.events
 
 
 

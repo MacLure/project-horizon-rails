@@ -1,5 +1,6 @@
 class Student::StudentsController < ApplicationController
   before_action :authenticate_student
+  
   def index
     @admins = Admin.all
     @cohorts = Cohort.all
