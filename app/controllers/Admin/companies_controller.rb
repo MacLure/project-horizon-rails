@@ -1,4 +1,5 @@
 class Admin::CompaniesController < ApplicationController
+  before_action :authenticate_admin
   def index
       @company = Company.all
       render json: @company

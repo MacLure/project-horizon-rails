@@ -1,5 +1,5 @@
 class Admin::AdminsController < ApplicationController
-# before_action :authenticate_admin
+before_action :authenticate_admin
 
 def current
     render json: current_user.as_json(only: %i(email))

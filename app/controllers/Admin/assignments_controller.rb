@@ -1,4 +1,5 @@
 class Admin::AssignmentsController < ApplicationController
+  before_action :authenticate_admin
   def index
       @assignemnt = Assignment.all
       render json: @assignemnt

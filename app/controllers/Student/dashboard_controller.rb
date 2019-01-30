@@ -1,4 +1,5 @@
 class Student::DashboardController < ApplicationController
+  before_action :authenticate_student
   def index
 
     @cohort = current_user.cohort
@@ -9,7 +10,7 @@ class Student::DashboardController < ApplicationController
     @events = @cohort.events
 
 
-  
+
 
     render json: {
       admins: @admins,
