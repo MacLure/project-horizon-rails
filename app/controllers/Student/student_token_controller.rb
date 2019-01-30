@@ -3,13 +3,6 @@ class Student::StudentTokenController < Knock::AuthTokenController
   after_action :current_student
 
   def current_student
-  @student = Student.find_by_email(params[:auth][:email])
-  puts "----------------#{@student.inspect}"
-  if @student
-    return @student
-  else
-    @errors = @student.errors.full_messages
-    return nil
+    return unless params[:auth][:email]
+  @current_user ||= Student.find_by_email(params[:auth][:email])
   end
- end
-end
