@@ -16,18 +16,14 @@ class Admin::CohortsController < ApplicationController
   end
 
   def update
-    if @cohort.update(cohort_params)
-      render json: @cohort
-    else
-      render json: { message: @cohort.errors }, status: 400
-    end
+    @cohort = Cohort.find(JSON.parse(params['id']))
+    @cohort.update
   end
 
   def destroy
       @cohort = Cohort.find(JSON.parse(params['id']))
       @cohort.destroy
-
-  end
+    end
 
     private
 

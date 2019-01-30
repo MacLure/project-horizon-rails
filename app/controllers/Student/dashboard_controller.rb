@@ -2,12 +2,28 @@ class Student::DashboardController < ApplicationController
   before_action :authenticate_student
   def index
 
-    @cohort = current_user.cohort
-    @students = @cohort.students
-    @assignments = @cohort.assignments
-    @submissions = @cohort.submissions
-    @submission_comments = current_user.submission_comments
-    @events = @cohort.events
+
+    @admins = Admin.all
+    @cohorts = Cohort.all
+
+    @students = Student.all
+    @student_notes = StudentNote.all
+
+    @assignments = Assignment.all
+    @submissions = Submission.all
+    @submission_comments = SubmissionComment.all
+
+    @company_notes = CompanyNote.all
+    @contact_notes = ContactNote.all
+
+    @events = Event.all
+    #
+    # @cohort = current_user.cohort
+    # @students = @cohort.students
+    # @assignments = @cohort.assignments
+    # @submissions = @cohort.submissions
+    # @submission_comments = current_user.submission_comments
+    # @events = @cohort.events
 
 
 
