@@ -24,7 +24,7 @@ class Admin::CohortsController < ApplicationController
   end
 
   def destroy
-      @cohort = Cohort.find(JSON.parse(params['cohort_id']))
+      @cohort = Cohort.find(JSON.parse(params['id']))
       @cohort.destroy
 
   end
