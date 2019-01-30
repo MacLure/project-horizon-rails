@@ -3,7 +3,7 @@ class Student::StudentTokenController < Knock::AuthTokenController
   after_action :current_student
 
   def current_student
-  @student = JSON.parse(Student.find_by_email(params[:auth][:email]))
+  @student = Student.find_by_email(JSON.parse(params[:auth][:email]))
   puts "----------------#{@student.inspect}"
   if @student
     render json: @student
