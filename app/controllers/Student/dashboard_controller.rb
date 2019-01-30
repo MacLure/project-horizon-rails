@@ -27,11 +27,11 @@ class Student::DashboardController < ApplicationController
     #
     # @events = Event.all
     #
-    @cohort = current_user.cohort
+    @cohort = current_student.cohort
     @students = @cohort.students
     @assignments = @cohort.assignments
     @submissions = @cohort.submissions
-    @submission_comments = current_user.submission_comments
+    @submission_comments = current_student.submission_comments
     @events = @cohort.events
 
 
