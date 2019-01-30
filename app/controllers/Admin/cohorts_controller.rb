@@ -11,7 +11,7 @@ class Admin::CohortsController < ApplicationController
     end
 
     def show
-    render json: @chort
+    render json: @cohort
   end
 
   def update
@@ -23,7 +23,8 @@ class Admin::CohortsController < ApplicationController
   end
 
   def destroy
-    if @cohort.destroy
+      @cohort = Cohort.find(params[:cohort])
+    if @cohort.destroy(cohort_params)
       render json: { message: "Successfully removed cohort." }, status: 204
     else
       render json: { message: "Unable to remove cohort" }, status: 400
