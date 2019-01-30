@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::API
   before_action :cors_set_access_control_headers
   include Knock::Authenticable
+  after_action :current_student, if: -> { @current_user.nil? }
 
 
   def handle_options_request
@@ -30,7 +31,7 @@ class ApplicationController < ActionController::API
     end
   end
   def current_student
-  return unless params[:auth][:email]
+  return unless params[:auth][:email] && !params[:auth][:is_admin]
   @current_user ||= Student.find_by_email(params[:auth][:email])
   end
     private
