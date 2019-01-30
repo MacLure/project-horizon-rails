@@ -6,10 +6,10 @@ class Student::StudentTokenController < Knock::AuthTokenController
   @student = Student.find_by_email(params[:auth][:email])
   puts "----------------#{@student.inspect}"
   if @student
-    render json: @student
+    return @student
   else
     @errors = @student.errors.full_messages
-    render json: @errors
+    return nil
   end
  end
 end
