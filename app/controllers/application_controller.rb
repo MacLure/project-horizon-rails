@@ -30,7 +30,13 @@ class ApplicationController < ActionController::API
       return false
     end
   end
-  
+
+  def current_student
+  if params[:auth][:email] && !params[:auth][:is_admin]
+    puts "..........................#{@current_user.inspect}"
+  @current_user = Student.find_by_email(params[:auth][:email])
+  end
+end
     private
 
 
