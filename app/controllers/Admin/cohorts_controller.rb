@@ -24,12 +24,9 @@ class Admin::CohortsController < ApplicationController
   end
 
   def destroy
+      @cohort = Cohort.find(JSON.parse(params['cohort_id']))
       @cohort.destroy
-    # if cohort.destroy(cohort_params)
-    #   render json: { message: "Successfully removed cohort." }, status: 204
-    # else
-    #   render json: { message: "Unable to remove cohort" }, status: 400
-    # end
+
   end
 
     private
