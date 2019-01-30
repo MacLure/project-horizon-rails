@@ -16,19 +16,13 @@ class Admin::ContactsController < ApplicationController
   end
 
   def update
-    if @contact.update(contact_params)
-      render json: @contact
-    else
-      render json: { message: @contact.errors }, status: 400
-    end
+    @contact = Contact.find(JSON.parse(params['id']))
+    @contact.update
   end
 
   def destroy
-    if @contact.destroy
-      render json: { message: "Successfully removed contact." }, status: 204
-    else
-      render json: { message: "Unable to remove contact" }, status: 400
-    end
+      @contact = Contact.find(JSON.parse(params['id']))
+      @contact.destroy
   end
 
     private

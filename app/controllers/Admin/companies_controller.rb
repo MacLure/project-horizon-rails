@@ -16,19 +16,13 @@ class Admin::CompaniesController < ApplicationController
   end
 
   def update
-    if @company.update(company_params)
-      render json: @company
-    else
-      render json: { message: @company.errors }, status: 400
-    end
+    @company = Company.find(JSON.parse(params['id']))
+    @company.update
   end
 
   def destroy
-    if @company.destroy
-      render json: { message: "Successfully removed company." }, status: 204
-    else
-      render json: { message: "Unable to remove company" }, status: 400
-    end
+      @company = Company.find(JSON.parse(params['id']))
+      @company.destroy
   end
 
     private
