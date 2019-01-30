@@ -31,9 +31,9 @@ class Student::DashboardController < ApplicationController
     # @events = Event.all
     #
 
-    
 
-    @cohort = Admin.find(JSON.parse(params['email'])).cohort
+
+    @cohort = Student.find(JSON.parse(params['email'])).cohort
     @students = @cohort.students
     @assignments = @cohort.assignments
     @submissions = @cohort.submissions

@@ -28,9 +28,9 @@ Rails.application.routes.draw do
     post 'find_student' => 'student#find'
 
      resources :students
-     resources :cohorts, only: %i(show)
-     resources :events, only: %i(show)
-     resources :assignments, only: %i(show)
+     resources :cohorts
+     resources :events
+     resources :assignments 
 
    end
 
