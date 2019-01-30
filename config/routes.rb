@@ -7,7 +7,7 @@ Rails.application.routes.draw do
      get '/' => 'dashboard#index'
      post 'admin_token' => 'admin_token#create'
      get 'admin/current' => 'admins#current'
-     post 'student_token' => 'student_token#create'
+
 
 
      resources :students
@@ -25,12 +25,12 @@ Rails.application.routes.draw do
      get '/' => 'dashboard#index'
      post 'student_token' => 'student_token#create'
      get 'student/current' => 'students#current'
-    post 'find_student' => 'student#find'
+    post 'find_student' => 'students#find'
 
      resources :students
      resources :cohorts
      resources :events
-     resources :assignments 
+     resources :assignments
 
    end
 
