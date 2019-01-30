@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::API
   before_action :cors_set_access_control_headers
   include Knock::Authenticable
-    after_action :authenticate_student_student
+
 
 
   def handle_options_request
@@ -32,9 +32,7 @@ class ApplicationController < ActionController::API
     end
   end
 
-  def authenticate_student_student
-     authenticate_for Student::Student
-   end
+  
   def current_student
   if params[:auth][:email] && !params[:auth][:is_admin]
     puts "..........................#{@current_user.inspect}"
