@@ -3,7 +3,7 @@ class Student::DashboardController < ApplicationController
 
   def index
 
-    # @cohort = current_student.cohort
+    @cohort = current_student.cohort
     # @students = @cohort.students
     # @assignments = @cohort.assignments
     # @submissions = @cohort.submissions
@@ -20,7 +20,7 @@ class Student::DashboardController < ApplicationController
 
     render json: {
       foo: "bar",
-      cohort: current_student.cohort,
+      cohort: @cohort
       student: current_student
       # admins: @admins,
       # cohorts: @cohorts,
