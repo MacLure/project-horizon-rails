@@ -3,7 +3,7 @@ class Student::DashboardController < ApplicationController
 
   def index
 
-    @cohort = Student.find(JSON.parse(params['email'])).cohort
+    @cohort = current_student.cohort
     @students = @cohort.students
     @assignments = @cohort.assignments
     @submissions = @cohort.submissions

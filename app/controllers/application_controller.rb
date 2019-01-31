@@ -15,21 +15,28 @@ class ApplicationController < ActionController::API
       headers['Access-Control-Allow-Headers'] = 'Origin, X-Requested-With, Content-Type, Accept, Authorization'
   end
 
-  def authenticate_admin
-    if (params['is_admin']) == true && (params['token'])
-      return true
-    else
-      return false
-    end
-  end
-
-  def authenticate_student
-    if (params['is_admin']) == false && (params['token'])
-      return true
-    else
-      return false
-    end
-  end
+  # def authenticate_admin
+  #   if (params['is_admin']) == true && (params['token'])
+  #     return true
+  #   else
+  #     return false
+  #   end
+  # end
+  #
+  # def authenticate_student
+  #   if (params['is_admin']) == false && (params['token'])
+  #     return true
+  #   else
+  #     return false
+  #   end
+  # end
+  # def authenticate_admin_admin
+  #   authenticate_for Admin::Admin
+  # end
+  #
+  # def authenticate_student_student
+  #   authenticate_for Student::Student
+  # end
 
     private
 
