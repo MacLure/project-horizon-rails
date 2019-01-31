@@ -29,6 +29,7 @@ class ApplicationController < ActionController::API
     else
       return false
     end
+  end
   # end
   # def authenticate_admin_admin
   #   authenticate_for Admin::Admin
@@ -45,11 +46,11 @@ class ApplicationController < ActionController::API
   # def current_user
   #   @current_user ||= Admin.find_by(JSON.parse(params['email'])
   # end
-end
+
 
 
 
 
 # elsif JSON.parse(params['is_admin'] == fa
 #   authenticate_student = true
-# end
+end
