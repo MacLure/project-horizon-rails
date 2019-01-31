@@ -20,7 +20,7 @@ class Student::DashboardController < ApplicationController
 
     render json: {
       foo: "bar",
-      cohort: current_student.cohort
+      cohort: current_student.cohort,
       student: current_student
       # admins: @admins,
       # cohorts: @cohorts,
