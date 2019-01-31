@@ -7,7 +7,10 @@ class Student::DashboardController < ApplicationController
     @classmates = @cohort.students
     @assignments = current_student.assignments
     @submissions = current_student.submissions
-    @submission_comments = current_student.submission_comments
+    @submission_comments = []
+    @submissions.each do |submission|
+      @submission_comments.push(submission.comments)
+    end
     @events = current_student.events
 
     # puts "Inside `StudentsController#index`"
