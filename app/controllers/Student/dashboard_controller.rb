@@ -7,7 +7,7 @@ class Student::DashboardController < ApplicationController
     @students = current_student.students
     @assignments = current_student.assignments
     @submissions = current_student.submissions
-    @submission_comments = current_student.submission_comments
+    # @submission_comments = current_student.submission_comments
     @events = current_student.events
 
     # puts "Inside `StudentsController#index`"
@@ -23,7 +23,7 @@ class Student::DashboardController < ApplicationController
       cohort: @cohort,
       assignments: @assignments,
       submissions: @submissions,
-      submission_comments: @submission_comments,
+      # submission_comments: @submission_comments,
       events: @events
       # admins: @admins,
       # cohorts: @cohorts,
