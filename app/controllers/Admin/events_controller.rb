@@ -1,4 +1,5 @@
 class Admin::EventsController < ApplicationController
+  before_action :authenticate_admin
   def index
       @event = Event.all
       render json: @event
@@ -15,19 +16,13 @@ class Admin::EventsController < ApplicationController
   end
 
   def update
-    if @event.update(cohort_params)
-      render json: @event
-    else
-      render json: { message: @event.errors }, status: 400
-    end
+    @event = Event.find(JSON.parse(params['id']))
+    @event.update
   end
 
   def destroy
-    if @event.destroy
-      render json: { message: "Successfully removed event." }, status: 204
-    else
-      render json: { message: "Unable to remove event" }, status: 400
-    end
+      @event = Event.find(JSON.parse(params['id']))
+      @event.destroy
   end
 
     private

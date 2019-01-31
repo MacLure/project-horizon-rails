@@ -1,4 +1,5 @@
 class Admin::CohortsController < ApplicationController
+  before_action :authenticate_admin
   def index
       @cohorts = Cohort.all
       render json: @cohorts
@@ -15,20 +16,13 @@ class Admin::CohortsController < ApplicationController
   end
 
   def update
-    if @cohort.update(cohort_params)
-      render json: @cohort
-    else
-      render json: { message: @cohort.errors }, status: 400
-    end
+    @cohort = Cohort.find(JSON.parse(params['id']))
+    @cohort.update
   end
 
   def destroy
-      @cohort = Cohort.find(params[:cohort])
-    if @cohort.destroy(cohort_params)
-      render json: { message: "Successfully removed cohort." }, status: 204
-    else
-      render json: { message: "Unable to remove cohort" }, status: 400
-    end
+      @cohort = Cohort.find(JSON.parse(params['id']))
+      @cohort.destroy
   end
 
     private
