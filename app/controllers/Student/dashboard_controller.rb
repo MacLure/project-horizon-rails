@@ -10,12 +10,12 @@ class Student::DashboardController < ApplicationController
     @submission_comments = current_student.submission_comments
     @events = current_student.events
 
-    puts "Inside `StudentsController#index`"
+    # puts "Inside `StudentsController#index`"
 
     # puts params.inspect
 
     # @student = Student.from_token_payload params["token"]
-    puts current_student
+    # puts current_student
 
 
     render json: {
