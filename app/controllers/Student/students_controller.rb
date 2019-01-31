@@ -1,5 +1,5 @@
 class Student::StudentsController < ApplicationController
-  # before_action :authenticate_student
+  before_action :authenticate_student
 
   def find
    @student = Student.find_by(email: params[:student][:email])

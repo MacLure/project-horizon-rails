@@ -1,7 +1,7 @@
 class Admin::DashboardController < ApplicationController
   before_action :authenticate_admin
   def index
-
+#can now use current admin as a variable
     @admins = Admin.all
     @cohorts = Cohort.all
 

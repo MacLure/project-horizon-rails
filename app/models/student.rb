@@ -7,8 +7,8 @@ class Student < ApplicationRecord
   has_many(:admins, {through: :cohort})
   has_many(:assignments, {through: :cohort})
 
-
-
-
+  def self.from_token_payload payload
+    self.find payload["sub"]
+  end
 
 end
