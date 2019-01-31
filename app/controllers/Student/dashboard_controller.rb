@@ -4,11 +4,11 @@ class Student::DashboardController < ApplicationController
   def index
 
     @cohort = current_student.cohort
-    # @students = @cohort.students
-    # @assignments = @cohort.assignments
-    # @submissions = @cohort.submissions
-    # # @submission_comments = @current_student_student.submission_comments
-    # @events = @cohort.events
+    @students = current_student.students
+    @assignments = current_student.assignments
+    @submissions = current_student.submissions
+    @submission_comments = current_student.submission_comments
+    @events = current_student.events
 
     puts "Inside `StudentsController#index`"
 
@@ -19,9 +19,12 @@ class Student::DashboardController < ApplicationController
 
 
     render json: {
-      foo: "bar",
+      student: current_student,
       cohort: @cohort,
-      student: current_student
+      assignments: @assignments,
+      submissions: @submissions,
+      submission_comments: @submission_comments,
+      events: @events
       # admins: @admins,
       # cohorts: @cohorts,
       # students: @students,
