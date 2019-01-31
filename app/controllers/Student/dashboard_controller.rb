@@ -4,7 +4,7 @@ class Student::DashboardController < ApplicationController
   def index
 
     @cohort = current_student.cohort
-    @students = current_student.students
+    @students = @cohort.students
     @assignments = current_student.assignments
     @submissions = current_student.submissions
     # @submission_comments = current_student.submission_comments
