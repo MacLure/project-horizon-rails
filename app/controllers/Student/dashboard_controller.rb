@@ -9,7 +9,7 @@ class Student::DashboardController < ApplicationController
     @submissions = current_student.submissions
     @submission_comments = []
     @submissions.each do |submission|
-      @submission_comments.push(submission.comments)
+      @submission_comments.push(submission.submission_comments)
     end
     @events = current_student.events
 
