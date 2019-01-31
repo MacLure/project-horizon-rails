@@ -7,6 +7,7 @@ Rails.application.routes.draw do
      get '/' => 'dashboard#index'
      post 'admin_token' => 'admin_token#create'
      get 'admin/current' => 'admins#current'
+     post 'find_admin' => 'admins#find'
 
 
 

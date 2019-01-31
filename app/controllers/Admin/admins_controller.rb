@@ -1,9 +1,6 @@
 class Admin::AdminsController < ApplicationController
 before_action :authenticate_admin
 
-def current
-    render json: current_user.as_json(only: %i(email))
-end
   def find
   @admin = Admin.find_by(email: params[:admin][:email])
   if @admin
@@ -34,15 +31,15 @@ end
       end
     end
 
-    def find
-    @admin = Admin.find_by(email: params[:admin][:email])
-    if @admin
-      render json: @admin
-    else
-      @errors = @admin.errors.full_messages
-      render json: @errors
-    end
-   end
+  #   def find
+  #   @admin = Admin.find_by(email: params[:admin][:email])
+  #   if @admin
+  #     render json: @admin
+  #   else
+  #     @errors = @admin.errors.full_messages
+  #     render json: @errors
+  #   end
+  #  end
 
     def show
       render json: @admin
