@@ -1,17 +1,17 @@
 class Admin::AssignmentsController < ApplicationController
   before_action :authenticate_admin
   def index
-      @assignemnt = Assignment.all
-      render json: @assignemnt
-    end
+    @assignemnt = Assignment.all
+    render json: @assignemnt
+  end
 
-    def create
-      assignemnt = JSON.parse(params['assignemnt'])
-      assignemnt = Assignment.create(assignemnt)
-      render json: assignemnt
-    end
+  def create
+    assignemnt = JSON.parse(params['assignment'])
+    assignemnt = Assignment.create(assignemnt)
+    render json: assignemnt
+  end
 
-    def show
+  def show
     render json: @assignemnt
   end
 
@@ -25,9 +25,9 @@ class Admin::AssignmentsController < ApplicationController
       @assignment.destroy
   end
 
-    private
+  private
 
-    def assignemnt_params
-      params.require(:assignemnt).permit( :cohort_id, :name, :body, :due_date )
-    end
+  def assignemnt_params
+    params.require(:assignemnt).permit( :cohort_id, :name, :body, :due_date )
+  end
 end
