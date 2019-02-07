@@ -14,7 +14,7 @@ Rails.application.routes.draw do
      resources :students
      resources :cohorts
      resources :admins
-     resources :assignemnts
+     resources :assignments
      resources :events
      resources :contacts
      resources :companies
