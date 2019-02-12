@@ -2,10 +2,8 @@
 
 > Rails server to compute and store data in a PostgreSQL database, providing services to the Horizon desktop app.
 
-
-
 <p align="center">
-  <img src="./assets/horizon_text2.svg" width="100%">
+  <img src="https://github.com/MacLure/project-horizon-react/blob/master/src/assets/img/logo-orange.png" />
 </p>
 
 Horizon is a student outcomes and success app designed for schools.
