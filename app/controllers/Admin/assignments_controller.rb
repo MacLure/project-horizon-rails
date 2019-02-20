@@ -17,7 +17,7 @@ class Admin::AssignmentsController < ApplicationController
 
   def update
     @assignment = Assignment.find(JSON.parse(params['id']))
-    @assignment.update
+    @assignment.update(assignemnt_params)
   end
 
   def destroy

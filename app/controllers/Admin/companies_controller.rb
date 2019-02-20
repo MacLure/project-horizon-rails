@@ -17,7 +17,7 @@ class Admin::CompaniesController < ApplicationController
 
   def update
     @company = Company.find(JSON.parse(params['id']))
-    @company.update
+    @company.update(company_params)
   end
 
   def destroy

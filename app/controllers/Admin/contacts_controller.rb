@@ -17,7 +17,7 @@ class Admin::ContactsController < ApplicationController
 
   def update
     @contact = Contact.find(JSON.parse(params['id']))
-    @contact.update
+    @contact.update(contact_params)
   end
 
   def destroy

@@ -17,7 +17,7 @@ class Admin::CohortsController < ApplicationController
 
   def update
     @cohort = Cohort.find(JSON.parse(params['id']))
-    @cohort.update
+    @cohort.update(cohort_params)
   end
 
   def destroy
