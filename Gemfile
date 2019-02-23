@@ -17,6 +17,8 @@ gem 'puma', '~> 3.11'
 gem 'bcrypt', '~> 3.1.7'
 gem 'pg'
 
+gem 'rails_12factor', group: :production
+
 gem 'knock'
 gem 'jwt'
 # Use ActiveStorage variant
