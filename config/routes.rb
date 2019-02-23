@@ -22,12 +22,14 @@ Rails.application.routes.draw do
     get '/' => 'dashboard#index'
     post 'student_token' => 'student_token#create'
     get 'student/current' => 'students#current'
-  post 'find_student' => 'students#find'
+    post 'find_student' => 'students#find'
 
     resources :students
     resources :cohorts
     resources :events
     resources :assignments
+    resources :submissions
+
 
   end
 
