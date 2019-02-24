@@ -17,7 +17,7 @@ class Admin::EventsController < ApplicationController
 
   def update
     @event = Event.find(JSON.parse(params['id']))
-    @event.update
+    @event.update(event_params)
   end
 
   def destroy

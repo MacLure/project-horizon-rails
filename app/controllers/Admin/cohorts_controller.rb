@@ -12,13 +12,18 @@ class Admin::CohortsController < ApplicationController
     end
 
     def show
-      render json: @cohort
-    end
+    render json: @cohort
+  end
 
-    def update
-      @cohort = Cohort.find(JSON.parse(params['id']))
-      @cohort.update
-    end
+  def update
+    @cohort = Cohort.find(JSON.parse(params['id']))
+    @cohort.update(cohort_params)
+  end
+
+    # def update
+    #   @cohort = Cohort.find(JSON.parse(params['id']))
+    #   @cohort.update
+    # end
 
     def destroy
         @cohort = Cohort.find(JSON.parse(params['id']))
