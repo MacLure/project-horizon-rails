@@ -35,7 +35,7 @@ cohort1 = Cohort.create(start_date: "2018-12-05 00:00:00", end_date: "2019-03-01
 cohort2 = Cohort.create(start_date: "2018-12-05 00:00:00", end_date: "2019-03-09 00:00:00", course_type:"wdi", name: "WDI-September-2018")
 cohort3 = Cohort.create(start_date: "2019-1-15 00:00:00", end_date: "2019-04-15 00:00:00", course_type:"uxdi", name: "UXDI-December-2018")
 cohort4 = Cohort.create(start_date: "2019-04-05 00:00:00", end_date: "2019-05-09 00:00:00", course_type:"uxdi", name: "UXDI-January-2019")
-cohort5 = Cohort.create(start_date: "2018-12-05 00:00:00", end_date: "2019-03-01 00:00:00", course_type:"dsi", name: "DSI-November-2018")
+cohort5 = Cohort.create(start_date: "2019-2-05 00:00:00", end_date: "2019-06-01 00:00:00", course_type:"dsi", name: "DSI-November-2018")
 
 student1 = Student.create(first_name: "Clara", last_name: "O'Student", phone: 9057778888, email:"clara.ostudent@okboom.com", image_url: nil, password: 'password', cohort_id: cohort1.id)
 student2 = Student.create(first_name: "Seong Hye", last_name: "McStudent", phone: 6479990000, email:"seonghye.mcstudent@haaangon.com", image_url: nil, password: 'password', cohort_id: cohort1.id)
@@ -86,10 +86,10 @@ student41 = Student.create(first_name: "Mike", last_name: "Francis", phone: 4162
 student42 = Student.create(first_name: "Joan", last_name: "Peters", phone: 6479990000, email:"joan.peters@haaangon.com", image_url: nil, password: 'password', cohort_id: cohort5.id)
 student43 = Student.create(first_name: "Eva", last_name: "Wheeler", phone: 4162223333, email:"eva.wheeler@coolman.com", image_url: nil, password: 'password', cohort_id: cohort5.id)
 
-assignment1 = Assignment.create(name: 'Assignment 1: Personal Branding', body: "Hey, branding is important.  Let's personal brand.", due_date: '2019-12-01 00:00:00', cohort_id: cohort1.id, )
-assignment2 = Assignment.create(name: 'Assignment 2: LinkedIn Profile', body: "Do you have LinkedIn?  Get on it.", due_date: '2019-12-15 00:00:00', cohort_id: cohort1.id, )
-assignment3 = Assignment.create(name: 'Assignment 3: Job Market Research', body: "Information will be vital to your boj search.  The best way to be prepared is by doing your research.  Make a list of 20 companies you would be interested in working for.", due_date: '2019-12-01 00:00:00', cohort_id: cohort1.id, )
-assignment4 = Assignment.create(name: 'Assignment 4: Resume', body: "Resumes are here to stay.  Spend some time polishing up your resume.", due_date: '2019-12-15 00:00:00', cohort_id: cohort1.id, )
+assignment1 = Assignment.create(name: 'Personal Branding', body: "Hey, branding is important.  Let's personal brand.", due_date: '2019-12-01 00:00:00', cohort_id: cohort1.id, )
+assignment2 = Assignment.create(name: 'LinkedIn Profile', body: "Do you have LinkedIn?  Get on it.", due_date: '2019-12-15 00:00:00', cohort_id: cohort1.id, )
+assignment3 = Assignment.create(name: 'Job Market Research', body: "Information will be vital to your boj search.  The best way to be prepared is by doing your research.  Make a list of 20 companies you would be interested in working for.", due_date: '2019-12-01 00:00:00', cohort_id: cohort1.id, )
+assignment4 = Assignment.create(name: 'Resume', body: "Resumes are here to stay.  Spend some time polishing up your resume.", due_date: '2019-12-15 00:00:00', cohort_id: cohort1.id, )
 
 event1 = Event.create(name:"Lesson: Personal Branding", company_id: nil, contact_id: nil, date: '2019-11-15 00:00:00', time: '2019-11-15 12:30:00', body:"Lesson on personal branding in Room 202.", cohort_id: cohort1.id )
 event2 = Event.create(name:"Lesson: LinkedIn", company_id: nil, contact_id: nil, date: '2019-12-10 00:00:00', time: '2019-12-10 12:30:00', body:"Lesson on LinkedIn in Room 203.", cohort_id: cohort1.id )
