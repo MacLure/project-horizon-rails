@@ -157,9 +157,12 @@ submission40 = Submission.create(assignment_id: assignment4.id, student_id: stud
 
 submission_comment1 = SubmissionComment.create(admin_id: admin1.id, submission_id: submission1.id, body:"Wow, what a great personal brand!")
 submission_comment2 = SubmissionComment.create(admin_id: admin2.id, submission_id: submission1.id, body:"This is a good start.  It could use some more details.")
-submission_comment3 = SubmissionComment.create(admin_id: admin1.id, submission_id: submission2.id, body:"Great start!  Try including more information about your brand.")
-submission_comment4 = SubmissionComment.create(admin_id: admin1.id, submission_id: submission3.id, body:"This is a really interesting personal story - great work.")
+submission_comment3 = SubmissionComment.create(admin_id: admin2.id, submission_id: submission30.id, body:"Great list!")
+submission_comment4 = SubmissionComment.create(admin_id: admin3.id, submission_id: submission30.id, body:"This is a good list.  Next, try reaching out to possible contacts there.")
 
-submission_comment5 = SubmissionComment.create(admin_id: admin1.id, submission_id: submission4.id, body:"Are you sure this is your LinkedIn profile?")
-submission_comment6 = SubmissionComment.create(admin_id: admin1.id, submission_id: submission5.id, body:"Good start.  Please fill in more fields, especially the summary section.")
-submission_comment7 = SubmissionComment.create(admin_id: admin1.id, submission_id: submission6.id, body:"Great pic!  Making great progress!")
+submission_comment5 = SubmissionComment.create(admin_id: admin1.id, submission_id: submission2.id, body:"Great start!  Try including more information about your brand.")
+submission_comment6 = SubmissionComment.create(admin_id: admin1.id, submission_id: submission3.id, body:"This is a really interesting personal story - great work.")
+
+submission_comment7 = SubmissionComment.create(admin_id: admin1.id, submission_id: submission4.id, body:"Are you sure this is your LinkedIn profile?")
+submission_comment8 = SubmissionComment.create(admin_id: admin1.id, submission_id: submission5.id, body:"Good start.  Please fill in more fields, especially the summary section.")
+submission_comment9 = SubmissionComment.create(admin_id: admin1.id, submission_id: submission6.id, body:"Great pic!  Making great progress!")
