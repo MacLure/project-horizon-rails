@@ -154,11 +154,11 @@ submission37 = Submission.create(assignment_id: assignment4.id, student_id: stud
 # submission39 = Submission.create(assignment_id: assignment4.id, student_id: student9.id, url: "https://www.linkedin.com/in/#{student9.first_name}/", body: "", is_approved: false)
 submission40 = Submission.create(assignment_id: assignment4.id, student_id: student10.id, url: "https://www.linkedin.com/in/#{student10.first_name}/", body: "", is_approved: false)
 
-submission_comment1 = SubmissionComment.create(admin_id: admin1.id, submission_id: submission1.id, body:`Wow, what a great personal brand, #{student1.first_name}!`)
-submission_comment2 = SubmissionComment.create(admin_id: admin2.id, submission_id: submission1.id, body:`This is a good start, #{student1.first_name}.  It could use some more details.`)
-submission_comment3 = SubmissionComment.create(admin_id: admin2.id, submission_id: submission21.id, body:`Great list, #{student1.first_name}!`)
-submission_comment4 = SubmissionComment.create(admin_id: admin3.id, submission_id: submission21.id, body:`This is a good list, #{student1.first_name}.  Next, try reaching out to possible contacts there.`)
-submission_comment5 = SubmissionComment.create(admin_id: admin1.id, submission_id: submission31.id, body:`Looks good, #{student1.first_name}.  Keep filling in your details.`)
+submission_comment1 = SubmissionComment.create(admin_id: admin1.id, submission_id: submission1.id, body:"Wow, what a great personal brand, #{student1.first_name}!")
+submission_comment2 = SubmissionComment.create(admin_id: admin2.id, submission_id: submission1.id, body:"This is a good start, #{student1.first_name}.  It could use some more details.")
+submission_comment3 = SubmissionComment.create(admin_id: admin2.id, submission_id: submission21.id, body:"Great list, #{student1.first_name}!")
+submission_comment4 = SubmissionComment.create(admin_id: admin3.id, submission_id: submission21.id, body:"This is a good list, #{student1.first_name}.  Next, try reaching out to possible contacts there.")
+submission_comment5 = SubmissionComment.create(admin_id: admin1.id, submission_id: submission31.id, body:"Looks good, #{student1.first_name}.  Keep filling in your details.")
 
 submission_comment6 = SubmissionComment.create(admin_id: admin1.id, submission_id: submission2.id, body:"Great start!  Try including more information about your brand.")
 submission_comment7 = SubmissionComment.create(admin_id: admin1.id, submission_id: submission3.id, body:"This is a really interesting personal story - great work.")
