@@ -95,8 +95,21 @@ assignment2 = Assignment.create(name: 'LinkedIn Profile', body: "Do you have Lin
 assignment3 = Assignment.create(name: 'Job Market Research', body: "Information will be vital to your boj search.  The best way to be prepared is by doing your research.  Make a list of 20 companies you would be interested in working for.", due_date: '2019-12-01 00:00:00', cohort_id: cohort1.id, )
 assignment4 = Assignment.create(name: 'Resume', body: "Resumes are here to stay.  Spend some time polishing up your resume.", due_date: '2019-12-15 00:00:00', cohort_id: cohort1.id, )
 
-event1 = Event.create(name:"Lesson: Personal Branding", company_id: nil, contact_id: nil, date: '2019-11-15 00:00:00', time: '2019-11-15 12:30:00', body:"Lesson on personal branding in Room 202.", cohort_id: cohort1.id )
-event2 = Event.create(name:"Lesson: LinkedIn", company_id: nil, contact_id: nil, date: '2019-12-10 00:00:00', time: '2019-12-10 12:30:00', body:"Lesson on LinkedIn in Room 203.", cohort_id: cohort1.id )
+event1 = Event.create(name:"Personal Branding", type:"Lesson", location:"Room 202", company_id: nil, contact_id: nil, date: '2019-11-15 00:00:00', time: '2019-11-15 12:30:00', body:"Personal brainding, your story, selling yourself.", cohort_id: cohort1.id )
+event2 = Event.create(name:"LinkedIn", type:"Lesson", location:"Room 202", company_id: nil, contact_id: nil, date: '2019-12-10 00:00:00', time: '2019-12-10 12:30:00', body:"Lesson on LinkedIn.  Start preparing by creating a LinkedIn account if you haven't already.", cohort_id: cohort1.id )
+event3 = Event.create(name:"Interviews", type:"Lesson", location:"Room 203", company_id: nil, contact_id: nil, date: '2019-11-15 00:00:00', time: '2019-11-15 12:30:00', body:"Interviews: prparing for them, what to wear, body language, how to answer common questions.", cohort_id: cohort1.id )
+event4 = Event.create(name:"Networking", type:"Lesson", location:"Room 201", company_id: nil, contact_id: nil, date: '2019-12-10 00:00:00', time: '2019-12-10 12:30:00', body:"Lesson on networking, finding events to join, and the elevator pitch", cohort_id: cohort1.id )
+
+event5 = Event.create(name:"Wattpad", type:"Company Visit", location:"36 Wellington St E, Toronto", company_id: nil, contact_id: nil, date: '2019-06-15 00:00:00', time: '2019-11-15 12:30:00', body:"Interviews: prparing for them, what to wear, body language, how to answer common questions.", cohort_id: cohort1.id )
+event6 = Event.create(name:"Finance-It", type:"Company Visit", location:"296 Richmond St W, Toronto", company_id: nil, contact_id: nil, date: '2019-07-10 00:00:00', time: '2019-12-10 12:30:00', body:"Lesson on LinkedIn.  Start preparing by creating a LinkedIn account if you haven't already.", cohort_id: cohort1.id )
+event7 = Event.create(name:"G-Adventures", type:"Company Visit", location:"19 Charlotte Street, Toronto", company_id: nil, contact_id: nil, date: '2019-09-15 00:00:00', time: '2019-11-15 12:30:00', body:"Personal brainding, your story, selling yourself.", cohort_id: cohort1.id )
+
+event8 = Event.create(name:"Chris Guest", type:"Guest Lecture", location:"Room 302", company_id: nil, contact_id: nil, date: '2019-07-01 00:00:00', time: '2019-11-15 12:30:00', body:"Chris guest has helped companies optimize their guest lecture series with his winning smile.", cohort_id: cohort1.id )
+event9 = Event.create(name:"Guestav Lecturenko", type:"Guest Lecture", location:"Room 301", company_id: nil, contact_id: nil, date: '2019-08-01 00:00:00', time: '2019-12-10 12:30:00', body:"Guestav has spent his professional career innovating guest talks around the world.", cohort_id: cohort1.id )
+
+event10 = Event.create(name:"Job Search Strategies", type:"Webinar", location: nil, company_id: nil, contact_id: nil, date: '2019-09-01 00:00:00', time: '2019-11-15 12:30:00', body:"How to manage your time as a job seeker, how to find jobs and get in front of people.", cohort_id: cohort1.id )
+event10 = Event.create(name:"Outcomes Support", type:"Webinar", location: nil, company_id: nil, contact_id: nil, date: '2019-12-15 00:00:00', time: '2019-11-15 12:30:00', body:"What you can expect now that the course is over.", cohort_id: cohort1.id )
+
 
 student_note1 = StudentNote.create(admin_id: admin11.id, student_id:student1.id, body:"Good attitude, grasping the material well.")
 student_note2 = StudentNote.create(admin_id: admin12.id, student_id:student1.id, body:"Pleasent to teach, gets along with other students.")
