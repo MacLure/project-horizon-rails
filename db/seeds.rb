@@ -15,7 +15,7 @@ Assignment.delete_all
 Event.delete_all
 StudentNote.delete_all
 
-admin1 = Admin.create(first_name: "Sally", last_name: "Adminstein", phone: 4161112222, email:"sally.mcadmin@horizon.com", title:"Outcomes Officer", image_url: nil, password: 'password')
+admin1 = Admin.create(first_name: "Sally", last_name: "McAdmin", phone: 4161112222, email:"sally.mcadmin@horizon.com", title:"Outcomes Officer", image_url: nil, password: 'password')
 admin2 = Admin.create(first_name: "Mustafa", last_name: "Adminsson", phone: 9054445555, email:"mustada.adminsson@horizon.com", title:"Student Life Coordinator", image_url: nil, password: 'password')
 admin3 = Admin.create(first_name: "Maria", last_name: "D'Admin", phone: 6477778888, email:"maria.dadmin@horizon.com", title:"DSI Head Instructor", image_url: nil, password: 'password')
 admin4 = Admin.create(first_name: "Frederick", last_name: "Love", phone: 6479264493, email:"FrederickLove@horizon.com", title:"Instructor", image_url: nil, password: 'password')
