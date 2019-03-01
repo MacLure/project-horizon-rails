@@ -12,6 +12,8 @@ class Student::DashboardController < ApplicationController
       @submission_comments.push(submission.submission_comments)
     end
     @events = current_student.events
+    @events = Admin.all
+
 
     # puts "Inside `StudentsController#index`"
 
