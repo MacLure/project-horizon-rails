@@ -30,7 +30,9 @@ class Student::DashboardController < ApplicationController
       assignments: @assignments,
       submissions: @submissions,
       submission_comments: @submission_comments,
-      events: @events
+      events: @events,
+      admins: @admins
+
       # admins: @admins,
       # cohorts: @cohorts,
       # students: @students,
