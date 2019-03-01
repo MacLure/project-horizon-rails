@@ -104,11 +104,11 @@ event5 = Event.create(name:"Wattpad", event_type:"Company Visit", location:"36 W
 event6 = Event.create(name:"Finance-It", event_type:"Company Visit", location:"296 Richmond St W, Toronto", company_id: nil, contact_id: nil, date: '2019-07-10 00:00:00', time: '2019-12-10 12:30:00', body:"Lesson on LinkedIn.  Start preparing by creating a LinkedIn account if you haven't already.", cohort_id: cohort1.id )
 event7 = Event.create(name:"G-Adventures", event_type:"Company Visit", location:"19 Charlotte Street, Toronto", company_id: nil, contact_id: nil, date: '2019-09-15 00:00:00', time: '2019-11-15 12:30:00', body:"Personal brainding, your story, selling yourself.", cohort_id: cohort1.id )
 
-event8 = Event.create(name:"Chris Guest", type:"Guest Lecture", location:"Room 302", company_id: nil, contact_id: nil, date: '2019-07-01 00:00:00', time: '2019-11-15 12:30:00', body:"Chris guest has helped companies optimize their guest lecture series with his winning smile.", cohort_id: cohort1.id )
-event9 = Event.create(name:"Guestav Lecturenko", type:"Guest Lecture", location:"Room 301", company_id: nil, contact_id: nil, date: '2019-08-01 00:00:00', time: '2019-12-10 12:30:00', body:"Guestav has spent his professional career innovating guest talks around the world.", cohort_id: cohort1.id )
+event8 = Event.create(name:"Chris Guest", event_type:"Guest Lecture", location:"Room 302", company_id: nil, contact_id: nil, date: '2019-07-01 00:00:00', time: '2019-11-15 12:30:00', body:"Chris guest has helped companies optimize their guest lecture series with his winning smile.", cohort_id: cohort1.id )
+event9 = Event.create(name:"Guestav Lecturenko", event_type:"Guest Lecture", location:"Room 301", company_id: nil, contact_id: nil, date: '2019-08-01 00:00:00', time: '2019-12-10 12:30:00', body:"Guestav has spent his professional career innovating guest talks around the world.", cohort_id: cohort1.id )
 
-event10 = Event.create(name:"Job Search Strategies", type:"Webinar", location: nil, company_id: nil, contact_id: nil, date: '2019-09-01 00:00:00', time: '2019-11-15 12:30:00', body:"How to manage your time as a job seeker, how to find jobs and get in front of people.", cohort_id: cohort1.id )
-event10 = Event.create(name:"Outcomes Support", type:"Webinar", location: nil, company_id: nil, contact_id: nil, date: '2019-12-15 00:00:00', time: '2019-11-15 12:30:00', body:"What you can expect now that the course is over.", cohort_id: cohort1.id )
+event10 = Event.create(name:"Job Search Strategies", event_type:"Webinar", location: nil, company_id: nil, contact_id: nil, date: '2019-09-01 00:00:00', time: '2019-11-15 12:30:00', body:"How to manage your time as a job seeker, how to find jobs and get in front of people.", cohort_id: cohort1.id )
+event10 = Event.create(name:"Outcomes Support", event_type:"Webinar", location: nil, company_id: nil, contact_id: nil, date: '2019-12-15 00:00:00', time: '2019-11-15 12:30:00', body:"What you can expect now that the course is over.", cohort_id: cohort1.id )
 
 
 student_note1 = StudentNote.create(admin_id: admin11.id, student_id:student1.id, body:"Good attitude, grasping the material well.")
