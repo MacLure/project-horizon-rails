@@ -87,5 +87,5 @@ npm start
 ## Developer team
 
 - Malcolm MacLure - [Website](http://malcolmmaclure.com/) - [GitHub](https://github.com/MacLure) - [LinkedIn](https://www.linkedin.com/in/malcolmmaclure/)
-- Benjamin Hoppe - [Website](https://benjaminhoppe.co/) - [GitHub](https://github.com/BenjaminHoppe) - [LinkedIn](https://www.linkedin.com/in/mrbenjaminhoppe/)
+- Benjamin Hoppe - [Website](http://malcolmmaclure.com/) - [GitHub](https://github.com/BenjaminHoppe) - [LinkedIn](https://www.linkedin.com/in/mrbenjaminhoppe/)
 - Gabriela Cuello - [GitHub](https://github.com/gabaza) - [LinkedIn](https://www.linkedin.com/in/gabriela-roa-411058176/)
