@@ -184,10 +184,10 @@ submission_comment8 = SubmissionComment.create(admin_id: admin1.id, submission_i
 submission_comment9 = SubmissionComment.create(admin_id: admin1.id, submission_id: submission5.id, body:"Good start.  Please fill in more fields, especially the summary section.")
 submission_comment10 = SubmissionComment.create(admin_id: admin1.id, submission_id: submission6.id, body:"Great pic!  Making great progress!")
 
-submission41 = Submission.create(assignment_id: assignment1.id, student_id: student1.id, url: '', body: "I, #{student44.first_name}, am truly unique.  It all started when I was young.  Now I'm professional with an interesting back-story.", is_approved: true)
-# submission42 = Submission.create(assignment_id: assignment2.id, student_id: student1.id, url: "https://www.linkedin.com/in/#{student1.first_name}/", body: "", is_approved: false)
-submission43 = Submission.create(assignment_id: assignment3.id, student_id: student1.id, body: "Here re some companies researched by me, #{student4.first_name}:  Uplift Technologies Inc., RefinePro, Blast, Obsidian Solutions, Tasky.me, colorapp.co, JobMart, BlancLink, CreckJack, Varicent Software", url: "", is_approved: false)
-submission44 = Submission.create(assignment_id: assignment4.id, student_id: student1.id, url: "https://www.linkedin.com/in/#{student1.first_name}/", body: "", is_approved: false)
+submission41 = Submission.create(assignment_id: assignment1.id, student_id: student44.id, url: '', body: "I, #{student44.first_name}, am truly unique.  It all started when I was young.  Now I'm professional with an interesting back-story.", is_approved: true)
+# submission42 = Submission.create(assignment_id: assignment2.id, student_id: student44.id, url: "https://www.linkedin.com/in/#{student1.first_name}/", body: "", is_approved: false)
+submission43 = Submission.create(assignment_id: assignment3.id, student_id: student44.id, body: "Here re some companies researched by me, #{student4.first_name}:  Uplift Technologies Inc., RefinePro, Blast, Obsidian Solutions, Tasky.me, colorapp.co, JobMart, BlancLink, CreckJack, Varicent Software", url: "", is_approved: false)
+submission44 = Submission.create(assignment_id: assignment4.id, student_id: student44.id, url: "https://www.linkedin.com/in/#{student1.first_name}/", body: "", is_approved: false)
 
 submission_comment41 = SubmissionComment.create(admin_id: admin1.id, submission_id: submission41.id, body:"Wow, what a great personal brand, #{student1.first_name}!")
 submission_comment42 = SubmissionComment.create(admin_id: admin2.id, submission_id: submission41.id, body:"This is a good start, #{student1.first_name}.  It could use some more details.")
