@@ -33,12 +33,12 @@ admin15 = Admin.create(first_name: "Ruth", last_name: "Peck", phone: 4163959281,
 
 admin16 = Admin.create(first_name: "Guest", last_name: "Admin", phone: 4161112222, email:"guest.admin@horizon.com", title:"Guest", image_url: nil, password: 'password')
 
-cohort1 = Cohort.create(start_date: "2018-12-05 00:00:00", end_date: "2019-03-01 00:00:00", course_type:"wdi", name: "Winter-2018")
-cohort2 = Cohort.create(start_date: "2018-12-12 00:00:00", end_date: "2019-03-09 00:00:00", course_type:"uxdi", name: "Winter-2018")
-cohort3 = Cohort.create(start_date: "2019-01-03 00:00:00", end_date: "2019-03-16 00:00:00", course_type:"dsi", name: "Winter-2018")
-cohort4 = Cohort.create(start_date: "2019-02-05 00:00:00", end_date: "2019-05-09 00:00:00", course_type:"wdi", name: "Spring-2019")
-cohort5 = Cohort.create(start_date: "2019-02-12 00:00:00", end_date: "2019-06-16 00:00:00", course_type:"uxdi", name: "Spring-2018")
-cohort6 = Cohort.create(start_date: "2019-02-29 00:00:00", end_date: "2019-05-25 00:00:00", course_type:"dsi", name: "Spring-2019")
+cohort1 = Cohort.create(start_date: "2018-03-05 00:00:00", end_date: "2019-06-01 00:00:00", course_type:"wdi", name: "Winter-2018")
+cohort2 = Cohort.create(start_date: "2018-03-12 00:00:00", end_date: "2019-06-09 00:00:00", course_type:"uxdi", name: "Winter-2018")
+cohort3 = Cohort.create(start_date: "2019-03-03 00:00:00", end_date: "2019-06-16 00:00:00", course_type:"dsi", name: "Winter-2018")
+cohort4 = Cohort.create(start_date: "2019-04-04 00:00:00", end_date: "2019-07-09 00:00:00", course_type:"wdi", name: "Spring-2019")
+cohort5 = Cohort.create(start_date: "2019-04-12 00:00:00", end_date: "2019-07-16 00:00:00", course_type:"uxdi", name: "Spring-2018")
+cohort6 = Cohort.create(start_date: "2019-04-29 00:00:00", end_date: "2019-07-25 00:00:00", course_type:"dsi", name: "Spring-2019")
 cohort7 = Cohort.create(start_date: "2019-05-05 00:00:00", end_date: "2019-08-05 00:00:00", course_type:"wdi", name: "Summer-2019")
 cohort8 = Cohort.create(start_date: "2019-05-12 00:00:00", end_date: "2019-08-12 00:00:00", course_type:"uxdi", name: "Summer-2019")
 cohort9 = Cohort.create(start_date: "2019-05-29 00:00:00", end_date: "2019-08-20 00:00:00", course_type:"dsi", name: "Summer-2019")
@@ -98,6 +98,31 @@ assignment1 = Assignment.create(name: 'Personal Branding', body: "Hey, branding 
 assignment2 = Assignment.create(name: 'LinkedIn Profile', body: "Do you have LinkedIn?  Get on it.", due_date: '2019-12-15 00:00:00', cohort_id: cohort1.id, )
 assignment3 = Assignment.create(name: 'Job Market Research', body: "Information will be vital to your boj search.  The best way to be prepared is by doing your research.  Make a list of 20 companies you would be interested in working for.", due_date: '2019-12-01 00:00:00', cohort_id: cohort1.id, )
 assignment4 = Assignment.create(name: 'Resume', body: "Resumes are here to stay.  Spend some time polishing up your resume.", due_date: '2019-12-15 00:00:00', cohort_id: cohort1.id, )
+assignment5 = Assignment.create(name: 'Attend Networking Events', body: "Networking will be very important in your job search. Find three events to attend and paste the links to the body of your submission.  You must plan to attend these events!", due_date: '2019-09-15 00:00:00', cohort_id: cohort1.id, )
+
+assignment1 = Assignment.create(name: 'Personal Branding', body: "Hey, branding is important.  Let's personal brand.", due_date: '2019-12-01 00:00:00', cohort_id: cohort2.id, )
+assignment2 = Assignment.create(name: 'LinkedIn Profile', body: "Do you have LinkedIn?  Get on it.", due_date: '2019-12-15 00:00:00', cohort_id: cohort2.id, )
+assignment3 = Assignment.create(name: 'Job Market Research', body: "Information will be vital to your boj search.  The best way to be prepared is by doing your research.  Make a list of 20 companies you would be interested in working for.", due_date: '2019-12-01 00:00:00', cohort_id: cohort2.id, )
+assignment4 = Assignment.create(name: 'Resume', body: "Resumes are here to stay.  Spend some time polishing up your resume.", due_date: '2019-12-15 00:00:00', cohort_id: cohort2.id, )
+assignment5 = Assignment.create(name: 'Attend Networking Events', body: "Networking will be very important in your job search. Find three events to attend and paste the links to the body of your submission.  You must plan to attend these events!", due_date: '2019-09-15 00:00:00', cohort_id: cohort2.id, )
+
+assignment1 = Assignment.create(name: 'Personal Branding', body: "Hey, branding is important.  Let's personal brand.", due_date: '2019-12-01 00:00:00', cohort_id: cohort3.id, )
+assignment2 = Assignment.create(name: 'LinkedIn Profile', body: "Do you have LinkedIn?  Get on it.", due_date: '2019-12-15 00:00:00', cohort_id: cohort3.id, )
+assignment3 = Assignment.create(name: 'Job Market Research', body: "Information will be vital to your boj search.  The best way to be prepared is by doing your research.  Make a list of 20 companies you would be interested in working for.", due_date: '2019-12-01 00:00:00', cohort_id: cohort3.id, )
+assignment4 = Assignment.create(name: 'Resume', body: "Resumes are here to stay.  Spend some time polishing up your resume.", due_date: '2019-12-15 00:00:00', cohort_id: cohort3.id, )
+assignment5 = Assignment.create(name: 'Attend Networking Events', body: "Networking will be very important in your job search. Find three events to attend and paste the links to the body of your submission.  You must plan to attend these events!", due_date: '2019-09-15 00:00:00', cohort_id: cohort3.id, )
+
+assignment1 = Assignment.create(name: 'Personal Branding', body: "Hey, branding is important.  Let's personal brand.", due_date: '2019-12-01 00:00:00', cohort_id: cohort4.id, )
+assignment2 = Assignment.create(name: 'LinkedIn Profile', body: "Do you have LinkedIn?  Get on it.", due_date: '2019-12-15 00:00:00', cohort_id: cohort4.id, )
+assignment3 = Assignment.create(name: 'Job Market Research', body: "Information will be vital to your boj search.  The best way to be prepared is by doing your research.  Make a list of 20 companies you would be interested in working for.", due_date: '2019-12-01 00:00:00', cohort_id: cohort4.id, )
+assignment4 = Assignment.create(name: 'Resume', body: "Resumes are here to stay.  Spend some time polishing up your resume.", due_date: '2019-12-15 00:00:00', cohort_id: cohort4.id, )
+assignment5 = Assignment.create(name: 'Attend Networking Events', body: "Networking will be very important in your job search. Find three events to attend and paste the links to the body of your submission.  You must plan to attend these events!", due_date: '2019-09-15 00:00:00', cohort_id: cohort4.id, )
+
+assignment1 = Assignment.create(name: 'Personal Branding', body: "Hey, branding is important.  Let's personal brand.", due_date: '2019-12-01 00:00:00', cohort_id: cohort5.id, )
+assignment2 = Assignment.create(name: 'LinkedIn Profile', body: "Do you have LinkedIn?  Get on it.", due_date: '2019-12-15 00:00:00', cohort_id: cohort5.id, )
+assignment3 = Assignment.create(name: 'Job Market Research', body: "Information will be vital to your boj search.  The best way to be prepared is by doing your research.  Make a list of 20 companies you would be interested in working for.", due_date: '2019-12-01 00:00:00', cohort_id: cohort5.id, )
+assignment4 = Assignment.create(name: 'Resume', body: "Resumes are here to stay.  Spend some time polishing up your resume.", due_date: '2019-12-15 00:00:00', cohort_id: cohort5.id, )
+assignment5 = Assignment.create(name: 'Attend Networking Events', body: "Networking will be very important in your job search. Find three events to attend and paste the links to the body of your submission.  You must plan to attend these events!", due_date: '2019-09-15 00:00:00', cohort_id: cohort5.id, )
 
 event1 = Event.create(name:"Personal Branding", event_type:"Lesson", location:"Room 202", company_id: nil, contact_id: nil, date: '2019-11-15 00:00:00', time: '2019-11-15 12:30:00', body:"Personal brainding, your story, selling yourself.", cohort_id: cohort1.id )
 event2 = Event.create(name:"LinkedIn", event_type:"Lesson", location:"Room 202", company_id: nil, contact_id: nil, date: '2019-12-10 00:00:00', time: '2019-12-10 12:30:00', body:"Lesson on LinkedIn.  Start preparing by creating a LinkedIn account if you haven't already.", cohort_id: cohort1.id )
@@ -171,6 +196,18 @@ submission37 = Submission.create(assignment_id: assignment4.id, student_id: stud
 # submission39 = Submission.create(assignment_id: assignment4.id, student_id: student9.id, url: "https://www.linkedin.com/in/#{student9.first_name}/", body: "", is_approved: false)
 submission40 = Submission.create(assignment_id: assignment4.id, student_id: student10.id, url: "https://www.linkedin.com/in/#{student10.first_name}/", body: "", is_approved: false)
 
+# submission46 = Submission.create(assignment_id: assignment5.id, student_id: student1.id, url: "", body: "Here are the events I, #{student1.first_name}, plan to attend: Meetup A, Hackathon B, Networking Night C", is_approved: false)
+# submission47 = Submission.create(assignment_id: assignment5.id, student_id: student2.id, url: "", body: "Here are the events I, #{student2.first_name}, plan to attend: Meetup A, Hackathon B, Networking Night C", is_approved: false)
+# submission48 = Submission.create(assignment_id: assignment5.id, student_id: student3.id, url: "", body: "Here are the events I, #{student3.first_name}, plan to attend: Meetup A, Hackathon B, Networking Night C", is_approved: false)
+submission49 = Submission.create(assignment_id: assignment5.id, student_id: student4.id, url: "", body: "Here are the events I, #{student4.first_name}, plan to attend: Meetup A, Hackathon B, Networking Night C", is_approved: false)
+submission50 = Submission.create(assignment_id: assignment5.id, student_id: student5.id, url: "", body: "Here are the events I, #{student5.first_name}, plan to attend: Meetup A, Hackathon B, Networking Night C", is_approved: false)
+# submission51 = Submission.create(assignment_id: assignment5.id, student_id: student6.id, url: "", body: "Here are the events I, #{student6.first_name}, plan to attend: Meetup A, Hackathon B, Networking Night C", is_approved: false)
+# submission52 = Submission.create(assignment_id: assignment5.id, student_id: student7.id, url: "", body: "Here are the events I, #{student7.first_name}, plan to attend: Meetup A, Hackathon B, Networking Night C", is_approved: false)
+# submission53 = Submission.create(assignment_id: assignment5.id, student_id: student8.id, url: "", body: "Here are the events I, #{student8.first_name}, plan to attend: Meetup A, Hackathon B, Networking Night C", is_approved: false)
+# submission54 = Submission.create(assignment_id: assignment5.id, student_id: student9.id, url: "", body: "Here are the events I, #{student9.first_name}, plan to attend: Meetup A, Hackathon B, Networking Night C", is_approved: false)
+submission55 = Submission.create(assignment_id: assignment5.id, student_id: student10.id, url: "", body: "Here are the events I, #{student10.first_name}, plan to attend: Meetup A, Hackathon B, Networking Night C", is_approved: false)
+
+
 submission_comment1 = SubmissionComment.create(admin_id: admin1.id, submission_id: submission1.id, body:"Wow, what a great personal brand, #{student1.first_name}!")
 submission_comment2 = SubmissionComment.create(admin_id: admin2.id, submission_id: submission1.id, body:"This is a good start, #{student1.first_name}.  It could use some more details.")
 submission_comment3 = SubmissionComment.create(admin_id: admin2.id, submission_id: submission21.id, body:"Great list, #{student1.first_name}!")
@@ -185,9 +222,9 @@ submission_comment9 = SubmissionComment.create(admin_id: admin1.id, submission_i
 submission_comment10 = SubmissionComment.create(admin_id: admin1.id, submission_id: submission6.id, body:"Great pic!  Making great progress!")
 
 submission41 = Submission.create(assignment_id: assignment1.id, student_id: student44.id, url: '', body: "I, #{student44.first_name}, am truly unique.  It all started when I was young.  Now I'm professional with an interesting back-story.", is_approved: true)
-# submission42 = Submission.create(assignment_id: assignment2.id, student_id: student44.id, url: "https://www.linkedin.com/in/#{student1.first_name}/", body: "", is_approved: false)
-submission43 = Submission.create(assignment_id: assignment3.id, student_id: student44.id, body: "Here re some companies researched by me, #{student4.first_name}:  Uplift Technologies Inc., RefinePro, Blast, Obsidian Solutions, Tasky.me, colorapp.co, JobMart, BlancLink, CreckJack, Varicent Software", url: "", is_approved: false)
-submission44 = Submission.create(assignment_id: assignment4.id, student_id: student44.id, url: "https://www.linkedin.com/in/#{student1.first_name}/", body: "", is_approved: false)
+# submission42 = Submission.create(assignment_id: assignment2.id, student_id: student44.id, url: "https://www.linkedin.com/in/#{student44.first_name}/", body: "", is_approved: false)
+submission43 = Submission.create(assignment_id: assignment3.id, student_id: student44.id, body: "Here re some companies researched by me, #{student44.first_name}:  Uplift Technologies Inc., RefinePro, Blast, Obsidian Solutions, Tasky.me, colorapp.co, JobMart, BlancLink, CreckJack, Varicent Software", url: "", is_approved: false)
+submission44 = Submission.create(assignment_id: assignment4.id, student_id: student44.id, url: "https://www.linkedin.com/in/#{student44.first_name}/", body: "", is_approved: false)
 
 submission_comment41 = SubmissionComment.create(admin_id: admin1.id, submission_id: submission41.id, body:"Wow, what a great personal brand, #{student1.first_name}!")
 submission_comment42 = SubmissionComment.create(admin_id: admin2.id, submission_id: submission41.id, body:"This is a good start, #{student1.first_name}.  It could use some more details.")
