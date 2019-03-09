@@ -226,8 +226,8 @@ submission41 = Submission.create(assignment_id: assignment1.id, student_id: stud
 submission43 = Submission.create(assignment_id: assignment3.id, student_id: student44.id, body: "Here re some companies researched by me, #{student44.first_name}:  Uplift Technologies Inc., RefinePro, Blast, Obsidian Solutions, Tasky.me, colorapp.co, JobMart, BlancLink, CreckJack, Varicent Software", url: "", is_approved: false)
 submission44 = Submission.create(assignment_id: assignment4.id, student_id: student44.id, url: "https://www.linkedin.com/in/#{student44.first_name}/", body: "", is_approved: false)
 
-submission_comment41 = SubmissionComment.create(admin_id: admin1.id, submission_id: submission41.id, body:"Wow, what a great personal brand, #{student1.first_name}!")
-submission_comment42 = SubmissionComment.create(admin_id: admin2.id, submission_id: submission41.id, body:"This is a good start, #{student1.first_name}.  It could use some more details.")
-submission_comment43 = SubmissionComment.create(admin_id: admin2.id, submission_id: submission43.id, body:"Great list, #{student1.first_name}!")
-submission_comment44 = SubmissionComment.create(admin_id: admin3.id, submission_id: submission43.id, body:"This is a good list, #{student1.first_name}.  Next, try reaching out to possible contacts there.")
-submission_comment45 = SubmissionComment.create(admin_id: admin1.id, submission_id: submission44.id, body:"Looks good, #{student1.first_name}.  Keep filling in your details.")
+submission_comment41 = SubmissionComment.create(admin_id: admin1.id, submission_id: submission41.id, body:"Wow, what a great personal brand, #{student44.first_name}!")
+submission_comment42 = SubmissionComment.create(admin_id: admin2.id, submission_id: submission41.id, body:"This is a good start, #{student44.first_name}.  It could use some more details.")
+submission_comment43 = SubmissionComment.create(admin_id: admin2.id, submission_id: submission43.id, body:"Great list, #{student44.first_name}!")
+submission_comment44 = SubmissionComment.create(admin_id: admin3.id, submission_id: submission43.id, body:"This is a good list, #{student44.first_name}.  Next, try reaching out to possible contacts there.")
+submission_comment45 = SubmissionComment.create(admin_id: admin1.id, submission_id: submission44.id, body:"Looks good, #{student44.first_name}.  Keep filling in your details.")
