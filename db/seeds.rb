@@ -152,16 +152,18 @@ student_note7 = StudentNote.create(admin_id: admin11.id, student_id:student3.id,
 student_note8 = StudentNote.create(admin_id: admin12.id, student_id:student3.id, body:"Gets along with with everyone, working hard to solidify their knowledge.")
 student_note9 = StudentNote.create(admin_id: admin13.id, student_id:student3.id, body:"Great attitude, puts in a lot of work to get the concepts.")
 
+# COHORT 1 SUBMISSIONS
+
 submission1 = Submission.create(assignment_id: assignment1.id, student_id: student1.id, url: '', body: "I, #{student1.first_name}, am truly unique.  It all started when I was young.  Now I'm professional with an interesting back-story.", is_approved: true)
 submission2 = Submission.create(assignment_id: assignment1.id, student_id: student2.id, url: '', body: "I, #{student2.first_name} have the best brand.  Nobody has a better brand than me.", is_approved: false)
 submission3 = Submission.create(assignment_id: assignment1.id, student_id: student3.id, url: '', body: "I, #{student3.first_name} am new to coding.  It's like this other thing I do which is very on-brand.", is_approved: true)
-submission4 = Submission.create(assignment_id: assignment1.id, student_id: student4.id, url: '', body: "I, #{student1.first_name}, am truly unique.  It all started when I was young.  Now I'm professional with an interesting back-story.", is_approved: true)
-submission5 = Submission.create(assignment_id: assignment1.id, student_id: student5.id, url: '', body: "I, #{student2.first_name} have the best brand.  Nobody has a better brand than me.", is_approved: false)
-submission6 = Submission.create(assignment_id: assignment1.id, student_id: student6.id, url: '', body: "I, #{student3.first_name} am new to coding.  It's like this other thing I do which is very on-brand.", is_approved: true)
-submission7 = Submission.create(assignment_id: assignment1.id, student_id: student7.id, url: '', body: "I, #{student1.first_name}, am truly unique.  It all started when I was young.  Now I'm professional with an interesting back-story.", is_approved: true)
-submission8 = Submission.create(assignment_id: assignment1.id, student_id: student8.id, url: '', body: "I, #{student2.first_name} have the best brand.  Nobody has a better brand than me.", is_approved: false)
-# submission9 = Submission.create(assignment_id: assignment1.id, student_id: student9.id, url: '', body: "I, #{student3.first_name} am new to coding.  It's like this other thing I do which is very on-brand.", is_approved: true)
-submission10 = Submission.create(assignment_id: assignment1.id, student_id: student10.id, url: '', body: "I, #{student3.first_name} am new to coding.  It's like this other thing I do which is very on-brand.", is_approved: true)
+submission4 = Submission.create(assignment_id: assignment1.id, student_id: student4.id, url: '', body: "I, #{student4.first_name}, am truly unique.  It all started when I was young.  Now I'm professional with an interesting back-story.", is_approved: true)
+submission5 = Submission.create(assignment_id: assignment1.id, student_id: student5.id, url: '', body: "I, #{student5.first_name} have the best brand.  Nobody has a better brand than me.", is_approved: false)
+submission6 = Submission.create(assignment_id: assignment1.id, student_id: student6.id, url: '', body: "I, #{student6.first_name} am new to coding.  It's like this other thing I do which is very on-brand.", is_approved: true)
+submission7 = Submission.create(assignment_id: assignment1.id, student_id: student7.id, url: '', body: "I, #{student7.first_name}, am truly unique.  It all started when I was young.  Now I'm professional with an interesting back-story.", is_approved: true)
+submission8 = Submission.create(assignment_id: assignment1.id, student_id: student8.id, url: '', body: "I, #{student8.first_name} have the best brand.  Nobody has a better brand than me.", is_approved: false)
+# submission9 = Submission.create(assignment_id: assignment1.id, student_id: student9.id, url: '', body: "I, #{student9.first_name} am new to coding.  It's like this other thing I do which is very on-brand.", is_approved: true)
+submission10 = Submission.create(assignment_id: assignment1.id, student_id: student10.id, url: '', body: "I, #{student10.first_name} am new to coding.  It's like this other thing I do which is very on-brand.", is_approved: true)
 
 # submission11 = Submission.create(assignment_id: assignment2.id, student_id: student1.id, url: "https://www.linkedin.com/in/#{student1.first_name}/", body: "", is_approved: false)
 # submission12 = Submission.create(assignment_id: assignment2.id, student_id: student2.id, url: "https://www.linkedin.com/in/#{student2.first_name}/", body: "", is_approved: false)
@@ -206,6 +208,60 @@ submission50 = Submission.create(assignment_id: assignment5.id, student_id: stud
 # submission53 = Submission.create(assignment_id: assignment5.id, student_id: student8.id, url: "", body: "Here are the events I, #{student8.first_name}, plan to attend: Meetup A, Hackathon B, Networking Night C", is_approved: false)
 # submission54 = Submission.create(assignment_id: assignment5.id, student_id: student9.id, url: "", body: "Here are the events I, #{student9.first_name}, plan to attend: Meetup A, Hackathon B, Networking Night C", is_approved: false)
 submission55 = Submission.create(assignment_id: assignment5.id, student_id: student10.id, url: "", body: "Here are the events I, #{student10.first_name}, plan to attend: Meetup A, Hackathon B, Networking Night C", is_approved: false)
+
+
+# COHORT 2 SUBMISSIONS
+
+submission56 = Submission.create(assignment_id: assignment1.id, student_id: student11.id, url: '', body: "I, #{student11.first_name}, am truly unique.  It all started when I was young.  Now I'm professional with an interesting back-story.", is_approved: true)
+submission57 = Submission.create(assignment_id: assignment1.id, student_id: student12.id, url: '', body: "I, #{student12.first_name} have the best brand.  Nobody has a better brand than me.", is_approved: false)
+submission58 = Submission.create(assignment_id: assignment1.id, student_id: student13.id, url: '', body: "I, #{student13.first_name} am new to coding.  It's like this other thing I do which is very on-brand.", is_approved: true)
+submission59  Submission.create(assignment_id: assignment1.id, student_id: student14.id, url: '', body: "I, #{student14.first_name}, am truly unique.  It all started when I was young.  Now I'm professional with an interesting back-story.", is_approved: true)
+submission60 = Submission.create(assignment_id: assignment1.id, student_id: student15.id, url: '', body: "I, #{student15.first_name} have the best brand.  Nobody has a better brand than me.", is_approved: false)
+submission61 = Submission.create(assignment_id: assignment1.id, student_id: student16.id, url: '', body: "I, #{student16.first_name} am new to coding.  It's like this other thing I do which is very on-brand.", is_approved: true)
+submission62 = Submission.create(assignment_id: assignment1.id, student_id: student17.id, url: '', body: "I, #{student17.first_name}, am truly unique.  It all started when I was young.  Now I'm professional with an interesting back-story.", is_approved: true)
+submission63 = Submission.create(assignment_id: assignment1.id, student_id: student18.id, url: '', body: "I, #{student18.first_name} have the best brand.  Nobody has a better brand than me.", is_approved: false)
+# submission64 = Submission.create(assignment_id: assignment1.id, student_id: student19.id, url: '', body: "I, #{student19.first_name} am new to coding.  It's like this other thing I do which is very on-brand.", is_approved: true)
+
+# submission66 = Submission.create(assignment_id: assignment2.id, student_id: student11.id, url: "https://www.linkedin.com/in/#{student11.first_name}/", body: "", is_approved: false)
+# submission67 = Submission.create(assignment_id: assignment2.id, student_id: student12.id, url: "https://www.linkedin.com/in/#{student12.first_name}/", body: "", is_approved: false)
+# submission68 = Submission.create(assignment_id: assignment2.id, student_id: student13.id, url: "https://www.linkedin.com/in/#{student13.first_name}/", body: "", is_approved: false)
+# submission69 = Submission.create(assignment_id: assignment2.id, student_id: student14.id, url: "https://www.linkedin.com/in/#{student14.first_name}/", body: "", is_approved: false)
+# submission70 = Submission.create(assignment_id: assignment2.id, student_id: student15.id, url: "https://www.linkedin.com/in/#{student15.first_name}/", body: "", is_approved: false)
+# submission71 = Submission.create(assignment_id: assignment2.id, student_id: student16.id, url: "https://www.linkedin.com/in/#{student16.first_name}/", body: "", is_approved: false)
+submission72 = Submission.create(assignment_id: assignment2.id, student_id: student17.id, url: "https://www.linkedin.com/in/#{student17.first_name}/", body: "", is_approved: false)
+submission73 = Submission.create(assignment_id: assignment2.id, student_id: student18.id, url: "https://www.linkedin.com/in/#{student18.first_name}/", body: "", is_approved: false)
+submission74 = Submission.create(assignment_id: assignment2.id, student_id: student19.id, url: "https://www.linkedin.com/in/#{student19.first_name}/", body: "", is_approved: false)
+
+submission76 = Submission.create(assignment_id: assignment3.id, student_id: student11.id, body: "Here are some companies researched by me, #{student11.first_name}:  Uplift Technologies Inc., RefinePro, Blast, Obsidian Solutions, Tasky.me, colorapp.co, JobMart, BlancLink, CreckJack, Varicent Software", url: "", is_approved: false)
+submission77 = Submission.create(assignment_id: assignment3.id, student_id: student12.id, body: "Here are some companies researched by me, #{student12.first_name}:  Uplift Technologies Inc., RefinePro, Blast, Obsidian Solutions, Tasky.me, colorapp.co, JobMart, BlancLink, CreckJack, Varicent Software", url: "", is_approved: false)
+submission78 = Submission.create(assignment_id: assignment3.id, student_id: student13.id, body: "Here are some companies researched by me, #{student13.first_name}:  Uplift Technologies Inc., RefinePro, Blast, Obsidian Solutions, Tasky.me, colorapp.co, JobMart, BlancLink, CreckJack, Varicent Software", url: "", is_approved: false)
+submission79 = Submission.create(assignment_id: assignment3.id, student_id: student14.id, body: "Here are some companies researched by me, #{student14.first_name}:  Uplift Technologies Inc., RefinePro, Blast, Obsidian Solutions, Tasky.me, colorapp.co, JobMart, BlancLink, CreckJack, Varicent Software", url: "", is_approved: false)
+# submission80 = Submission.create(assignment_id: assignment3.id, student_id: student15.id, body: "Here are some companies researched by me, #{student15.first_name}:  Uplift Technologies Inc., RefinePro, Blast, Obsidian Solutions, Tasky.me, colorapp.co, JobMart, BlancLink, CreckJack, Varicent Software", url: "", is_approved: false)
+# submission81 = Submission.create(assignment_id: assignment3.id, student_id: student16.id, body: "Here are some companies researched by me, #{student16.first_name}:  Uplift Technologies Inc., RefinePro, Blast, Obsidian Solutions, Tasky.me, colorapp.co, JobMart, BlancLink, CreckJack, Varicent Software", url: "", is_approved: false)
+# submission82 = Submission.create(assignment_id: assignment3.id, student_id: student17.id, body: "Here are some companies researched by me, #{student17.first_name}:  Uplift Technologies Inc., RefinePro, Blast, Obsidian Solutions, Tasky.me, colorapp.co, JobMart, BlancLink, CreckJack, Varicent Software", url: "", is_approved: false)
+# submission83 = Submission.create(assignment_id: assignment3.id, student_id: student18.id, body: "Here are some companies researched by me, #{student18.first_name}:  Uplift Technologies Inc., RefinePro, Blast, Obsidian Solutions, Tasky.me, colorapp.co, JobMart, BlancLink, CreckJack, Varicent Software", url: "", is_approved: false)
+# submission84 = Submission.create(assignment_id: assignment3.id, student_id: student19.id, body: "Here are some companies researched by me, #{student19.first_name}:  Uplift Technologies Inc., RefinePro, Blast, Obsidian Solutions, Tasky.me, colorapp.co, JobMart, BlancLink, CreckJack, Varicent Software", url: "", is_approved: false)
+
+submission86 = Submission.create(assignment_id: assignment4.id, student_id: student11.id, url: "https://www.linkedin.com/in/#{student11.first_name}/", body: "", is_approved: false)
+submission87 = Submission.create(assignment_id: assignment4.id, student_id: student12.id, url: "https://www.linkedin.com/in/#{student12.first_name}/", body: "", is_approved: false)
+submission88 = Submission.create(assignment_id: assignment4.id, student_id: student13.id, url: "https://www.linkedin.com/in/#{student13.first_name}/", body: "", is_approved: false)
+submission89 = Submission.create(assignment_id: assignment4.id, student_id: student14.id, url: "https://www.linkedin.com/in/#{student14.first_name}/", body: "", is_approved: false)
+submission90 = Submission.create(assignment_id: assignment4.id, student_id: student15.id, url: "https://www.linkedin.com/in/#{student15.first_name}/", body: "", is_approved: false)
+submission91 = Submission.create(assignment_id: assignment4.id, student_id: student16.id, url: "https://www.linkedin.com/in/#{student16.first_name}/", body: "", is_approved: false)
+submission92 = Submission.create(assignment_id: assignment4.id, student_id: student17.id, url: "https://www.linkedin.com/in/#{student17.first_name}/", body: "", is_approved: false)
+# submission93 = Submission.create(assignment_id: assignment4.id, student_id: student18.id, url: "https://www.linkedin.com/in/#{student18.first_name}/", body: "", is_approved: false)
+# submission94 = Submission.create(assignment_id: assignment4.id, student_id: student19.id, url: "https://www.linkedin.com/in/#{student19.first_name}/", body: "", is_approved: false)
+
+# submission96 = Submission.create(assignment_id: assignment5.id, student_id: student11.id, url: "", body: "Here are the events I, #{student11.first_name}, plan to attend: Meetup A, Hackathon B, Networking Night C", is_approved: false)
+# submission97 = Submission.create(assignment_id: assignment5.id, student_id: student12.id, url: "", body: "Here are the events I, #{student12.first_name}, plan to attend: Meetup A, Hackathon B, Networking Night C", is_approved: false)
+# submission98 = Submission.create(assignment_id: assignment5.id, student_id: student13.id, url: "", body: "Here are the events I, #{student13.first_name}, plan to attend: Meetup A, Hackathon B, Networking Night C", is_approved: false)
+submission99 = Submission.create(assignment_id: assignment5.id, student_id: student14.id, url: "", body: "Here are the events I, #{student14.first_name}, plan to attend: Meetup A, Hackathon B, Networking Night C", is_approved: false)
+submission100 = Submission.create(assignment_id: assignment5.id, student_id: student15.id, url: "", body: "Here are the events I, #{student15.first_name}, plan to attend: Meetup A, Hackathon B, Networking Night C", is_approved: false)
+# submission101 = Submission.create(assignment_id: assignment5.id, student_id: student16.id, url: "", body: "Here are the events I, #{student16.first_name}, plan to attend: Meetup A, Hackathon B, Networking Night C", is_approved: false)
+# submission102 = Submission.create(assignment_id: assignment5.id, student_id: student17.id, url: "", body: "Here are the events I, #{student17.first_name}, plan to attend: Meetup A, Hackathon B, Networking Night C", is_approved: false)
+# submission103 = Submission.create(assignment_id: assignment5.id, student_id: student18.id, url: "", body: "Here are the events I, #{student18.first_name}, plan to attend: Meetup A, Hackathon B, Networking Night C", is_approved: false)
+# submission104 = Submission.create(assignment_id: assignment5.id, student_id: student19.id, url: "", body: "Here are the events I, #{student19.first_name}, plan to attend: Meetup A, Hackathon B, Networking Night C", is_approved: false)
+
 
 
 submission_comment1 = SubmissionComment.create(admin_id: admin1.id, submission_id: submission1.id, body:"Wow, what a great personal brand, #{student1.first_name}!")
