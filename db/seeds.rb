@@ -92,6 +92,8 @@ student41 = Student.create(first_name: "Mike", last_name: "Francis", phone: 4162
 student42 = Student.create(first_name: "Joan", last_name: "Peters", phone: 6479990000, email:"joan.peters@haaangon.com", image_url: nil, password: 'password', cohort_id: cohort5.id)
 student43 = Student.create(first_name: "Eva", last_name: "Wheeler", phone: 4162223333, email:"eva.wheeler@coolman.com", image_url: nil, password: 'password', cohort_id: cohort5.id)
 
+# GUEST STUDENT
+
 student44 = Student.create(first_name: "Guest", last_name: "Student", phone: 4161112222, email:"guest.student@horizon.com", image_url: nil, password: 'password', cohort_id: cohort1.id)
 
 assignment1 = Assignment.create(name: 'Personal Branding', body: "Hey, branding is important.  Let's personal brand.", due_date: '2019-12-01 00:00:00', cohort_id: cohort1.id, )
@@ -215,7 +217,7 @@ submission55 = Submission.create(assignment_id: assignment5.id, student_id: stud
 submission56 = Submission.create(assignment_id: assignment1.id, student_id: student11.id, url: '', body: "I, #{student11.first_name}, am truly unique.  It all started when I was young.  Now I'm professional with an interesting back-story.", is_approved: true)
 submission57 = Submission.create(assignment_id: assignment1.id, student_id: student12.id, url: '', body: "I, #{student12.first_name} have the best brand.  Nobody has a better brand than me.", is_approved: false)
 submission58 = Submission.create(assignment_id: assignment1.id, student_id: student13.id, url: '', body: "I, #{student13.first_name} am new to coding.  It's like this other thing I do which is very on-brand.", is_approved: true)
-submission59  Submission.create(assignment_id: assignment1.id, student_id: student14.id, url: '', body: "I, #{student14.first_name}, am truly unique.  It all started when I was young.  Now I'm professional with an interesting back-story.", is_approved: true)
+submission59 = Submission.create(assignment_id: assignment1.id, student_id: student14.id, url: '', body: "I, #{student14.first_name}, am truly unique.  It all started when I was young.  Now I'm professional with an interesting back-story.", is_approved: true)
 submission60 = Submission.create(assignment_id: assignment1.id, student_id: student15.id, url: '', body: "I, #{student15.first_name} have the best brand.  Nobody has a better brand than me.", is_approved: false)
 submission61 = Submission.create(assignment_id: assignment1.id, student_id: student16.id, url: '', body: "I, #{student16.first_name} am new to coding.  It's like this other thing I do which is very on-brand.", is_approved: true)
 submission62 = Submission.create(assignment_id: assignment1.id, student_id: student17.id, url: '', body: "I, #{student17.first_name}, am truly unique.  It all started when I was young.  Now I'm professional with an interesting back-story.", is_approved: true)
