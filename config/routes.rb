@@ -13,6 +13,7 @@ Rails.application.routes.draw do
     resources :cohorts
     resources :admins
     resources :assignments
+    resources :submission_comments
     resources :events
     resources :contacts
     resources :companies

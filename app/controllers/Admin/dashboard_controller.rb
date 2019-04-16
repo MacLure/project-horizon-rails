@@ -20,6 +20,7 @@ class Admin::DashboardController < ApplicationController
     @events = Event.all
 
     render json: {
+      admin: current_admin,
       admins: @admins,
       cohorts: @cohorts,
       students: @students,
