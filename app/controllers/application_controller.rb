@@ -2,8 +2,6 @@ class ApplicationController < ActionController::API
   before_action :cors_set_access_control_headers
   include Knock::Authenticable
 
-
-
   def handle_options_request
     head(:ok) if request.request_method == "OPTIONS"
   end

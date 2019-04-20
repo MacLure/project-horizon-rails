@@ -2,34 +2,34 @@ class Student::SubmissionsController < ApplicationController
   before_action :authenticate_student
 
   def index
-      @submission = Submission.all
-      render json: @submission
-    end
+    @submission = Submission.all
+    render json: @submission
+  end
 
-    def create
-      submission = JSON.parse(params['submission'])
-      submission = Submission.create(submission)
-      render json: submission
-    end
+  def create
+    submission = JSON.parse(params['submission'])
+    submission = Submission.create(submission)
+    render json: submission
+  end
 
-    def show
-      render json: @submission
-    end
+  def show
+    render json: @submission
+  end
 
-    def update
+  def update
+    @submission = Submission.find(JSON.parse(params['id']))
+    @submission.update
+  end
+
+  def destroy
       @submission = Submission.find(JSON.parse(params['id']))
-      @submission.update
-    end
+      @submission.destroy
+  end
 
-    def destroy
-        @submission = Submission.find(JSON.parse(params['id']))
-        @submission.destroy
-    end
+  private
 
-    private
-
-    def event_params
-      params.require(:submission).permit( :assignment_id, :student_id, :url, :body, :is_approved )
-    end
+  def submission_params
+    params.require(:submission).permit( :assignment_id, :student_id, :url, :body, :is_approved )
+  end
 
 end
